@@ -1,0 +1,7 @@
+/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/CMakeFiles/asteroids.dir
+/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/CMakeFiles/glad.dir
+/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/CMakeFiles/ALL_BUILD.dir
+/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/CMakeFiles/ZERO_CHECK.dir
+/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/CMakeFiles/ALL_BUILD.dir
+/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/CMakeFiles/ZERO_CHECK.dir
+/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src/CMakeFiles/glfw.dir

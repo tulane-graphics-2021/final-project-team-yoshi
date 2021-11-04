@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0B3EFEB9DDE44DE9AE0996AE /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6A11CF7647F443E0A98EA873 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				A0F30AE60DCB9E9826928BDC /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		C1ED9BA666B34D01A8564FE2 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7CB4312778BE42799DA75759 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				C406127A39C0D7302EB8E6B0 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				75A6E0C8E14844AB87380CF0 /* PBXTargetDependency */,
+				3EBA4C41B47E4A839EC64C3D /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0A5226C11D064BEDB8F3FC5E /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = 4F1C78A9C22A4ADA9EC0D0B3 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_joystick.m */; };
+		131BC71602ED46E19842A16C /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = DBC6C0D7F38B4ABDB1131B7A /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/vulkan.c */; };
+		1D9CBCF67FF24725B27D9A7B /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 94030F0FC0F844BAB33EFB42 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_time.c */; };
+		20F56AC798584D93B3A3F971 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/posix_tls.h */ = {isa = PBXBuildFile; fileRef = D409A0BF9A054D0DB711B523 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/posix_tls.h */; };
+		2526756EB4BC4FA3B6AA89B0 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 23B69A5EB700458C8B48EEC3 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/monitor.c */; };
+		2AE83EC8FA44413596E8D687 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/internal.h */ = {isa = PBXBuildFile; fileRef = 56B7C0A78FC64711A5837E49 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/internal.h */; };
+		2F22ABF4641B469296E758BF /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/context.c */ = {isa = PBXBuildFile; fileRef = D0A9FD154A304C76B22AF182 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/context.c */; };
+		2FAFE54CBD1D45A48ED926AA /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = D1E2DD706C8B49B7A5F0CB13 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_monitor.m */; };
+		35EFA9521D914D81AB546F56 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 270C49563A554FE3822DDA59 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include/GLFW/glfw3native.h */; };
+		7642D553134345049F20BC54 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = AA64CF90D0474F3DA8BBB5FB /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_joystick.h */; };
+		78107A0D0C594826A6E907F3 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/init.c */ = {isa = PBXBuildFile; fileRef = FC73DF829D5044F491A829C7 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/init.c */; };
+		804E43FB3BE441168635AED8 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = E766251AAC1A4B839B048949 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_init.m */; };
+		82C872BDDE37431383B3E0C4 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = D9B67B89CA8B4B2B847CE795 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_window.m */; };
+		A26E58A8359C461D947C7EBF /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/posix_tls.c */ = {isa = PBXBuildFile; fileRef = BC256F00725A4F0390EBDB80 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/posix_tls.c */; };
+		A5154C9D728443FEA5E650D3 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = DCEB83761AE14849B1F6D502 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include/GLFW/glfw3.h */; };
+		A543E3A416A14155BC277091 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9F8FF3C78C904E52AAF0D6B9 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/CMakeLists.txt */; };
+		A9973F8EBF7C474FAC3C6E17 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = C22FB820F38E4600AFF28571 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/nsgl_context.m */; };
+		C238595AD7534925989D65D7 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = E0266094C3CB43EF97CB7435 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/nsgl_context.h */; };
+		CF387546B51E430AAA69476A /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/window.c */ = {isa = PBXBuildFile; fileRef = 124479DEA98C4E9AA39F8004 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/window.c */; };
+		D0FE244A92ED40DBB55B996D /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 8F1EEA5FF29F4FF08AA05D1C /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src/glfw_config.h */; };
+		EB4CBF83246B4D26A91EC80B /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = BFA6A4C26091445982F4F40F /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_platform.h */; };
+		EF645B86377449ECB8105D82 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/input.c */ = {isa = PBXBuildFile; fileRef = 08E3316A2FA64FD0AA90A746 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/input.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		6E623C9FD61546089B1F962D /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		8F2DD9F1DD734079B134FCFB /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		CE696284AA0D44EFB1DF5D98 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		CF7D9C8577C146ABB99ED343 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		3C1B8C4AF76648BC89EED410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D854FCD01849498CA86B4C7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B3EFEB9DDE44DE9AE0996AE;
+			remoteInfo = ZERO_CHECK;
+		};
+		99258A5485DF4ABF81D73609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D854FCD01849498CA86B4C7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B3EFEB9DDE44DE9AE0996AE;
+			remoteInfo = ZERO_CHECK;
+		};
+		D6238AD95DDE4C63A288051C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D854FCD01849498CA86B4C7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C950F60D0B04159821F5D1D;
+			remoteInfo = glfw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08E3316A2FA64FD0AA90A746 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = src/input.c; sourceTree = SOURCE_ROOT; };
+		124479DEA98C4E9AA39F8004 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = src/window.c; sourceTree = SOURCE_ROOT; };
+		23B69A5EB700458C8B48EEC3 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = src/monitor.c; sourceTree = SOURCE_ROOT; };
+		270C49563A554FE3822DDA59 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		2E53C2F7CFFD44578CBA1CEF /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4F1C78A9C22A4ADA9EC0D0B3 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+		56B7C0A78FC64711A5837E49 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = src/internal.h; sourceTree = SOURCE_ROOT; };
+		884CC503485546B0AEA30D99 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1EEA5FF29F4FF08AA05D1C /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "../Build/glfw-3.2/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		94030F0FC0F844BAB33EFB42 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		9F8FF3C78C904E52AAF0D6B9 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		AA64CF90D0474F3DA8BBB5FB /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = src/cocoa_joystick.h; sourceTree = SOURCE_ROOT; };
+		BC256F00725A4F0390EBDB80 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = src/posix_tls.c; sourceTree = SOURCE_ROOT; };
+		BFA6A4C26091445982F4F40F /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		C22FB820F38E4600AFF28571 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		D0A9FD154A304C76B22AF182 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = src/context.c; sourceTree = SOURCE_ROOT; };
+		D1E2DD706C8B49B7A5F0CB13 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		D409A0BF9A054D0DB711B523 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = src/posix_tls.h; sourceTree = SOURCE_ROOT; };
+		D9B67B89CA8B4B2B847CE795 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		DBC6C0D7F38B4ABDB1131B7A /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = src/vulkan.c; sourceTree = SOURCE_ROOT; };
+		DCEB83761AE14849B1F6D502 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		E0266094C3CB43EF97CB7435 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		E766251AAC1A4B839B048949 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		FC73DF829D5044F491A829C7 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = src/init.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D047FB03C46549388AC66FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B6A338029FF4907987465EE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E766251AAC1A4B839B048949 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_init.m */,
+				4F1C78A9C22A4ADA9EC0D0B3 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_joystick.m */,
+				D1E2DD706C8B49B7A5F0CB13 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_monitor.m */,
+				94030F0FC0F844BAB33EFB42 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_time.c */,
+				D9B67B89CA8B4B2B847CE795 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_window.m */,
+				D0A9FD154A304C76B22AF182 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/context.c */,
+				FC73DF829D5044F491A829C7 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/init.c */,
+				08E3316A2FA64FD0AA90A746 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/input.c */,
+				23B69A5EB700458C8B48EEC3 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/monitor.c */,
+				C22FB820F38E4600AFF28571 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/nsgl_context.m */,
+				BC256F00725A4F0390EBDB80 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/posix_tls.c */,
+				DBC6C0D7F38B4ABDB1131B7A /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/vulkan.c */,
+				124479DEA98C4E9AA39F8004 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		7752460A82C041899470C0ED /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				4B6A338029FF4907987465EE /* Source Files */,
+				E83345C9E89F4C07811621A6 /* Header Files */,
+				9F8FF3C78C904E52AAF0D6B9 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		97A79F069658450FAED5852B /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				7752460A82C041899470C0ED /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		BA6ED174D55C439196965943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				884CC503485546B0AEA30D99 /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1C575001AA14A55BC03ABFE = {
+			isa = PBXGroup;
+			children = (
+				DD6B4EAC00344D409E1AD119 /* ALL_BUILD */,
+				97A79F069658450FAED5852B /* GLFW3 */,
+				BA6ED174D55C439196965943 /* Products */,
+				E3B3DE465C6C425AB106BBEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD6B4EAC00344D409E1AD119 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				F1E2A20372B740F49F146594 /* CMake Rules */,
+				2E53C2F7CFFD44578CBA1CEF /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		E3B3DE465C6C425AB106BBEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E83345C9E89F4C07811621A6 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F1EEA5FF29F4FF08AA05D1C /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src/glfw_config.h */,
+				DCEB83761AE14849B1F6D502 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include/GLFW/glfw3.h */,
+				270C49563A554FE3822DDA59 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include/GLFW/glfw3native.h */,
+				AA64CF90D0474F3DA8BBB5FB /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_joystick.h */,
+				BFA6A4C26091445982F4F40F /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_platform.h */,
+				56B7C0A78FC64711A5837E49 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/internal.h */,
+				E0266094C3CB43EF97CB7435 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/nsgl_context.h */,
+				D409A0BF9A054D0DB711B523 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/posix_tls.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		F1E2A20372B740F49F146594 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C950F60D0B04159821F5D1D /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA753C92B1B4E829CA3CDEB /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				68CE71BFBB634DBA828B1149 /* Sources */,
+				D047FB03C46549388AC66FCF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0437C1524F624F5FB8BBE518 /* PBXTargetDependency */,
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 884CC503485546B0AEA30D99 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D854FCD01849498CA86B4C7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 26094822D90A4EF88DE39C83 /* Build configuration list for PBXProject "GLFW" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				CF7D9C8577C146ABB99ED343 /* Debug */,
+				CE696284AA0D44EFB1DF5D98 /* Release */,
+				8F2DD9F1DD734079B134FCFB /* MinSizeRel */,
+				6E623C9FD61546089B1F962D /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = D1C575001AA14A55BC03ABFE;
+			projectDirPath = "../../glfw-3.2";
+			projectRoot = "";
+			targets = (
+				C1ED9BA666B34D01A8564FE2 /* ALL_BUILD */,
+				0B3EFEB9DDE44DE9AE0996AE /* ZERO_CHECK */,
+				0C950F60D0B04159821F5D1D /* glfw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A0F30AE60DCB9E9826928BDC /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2
+  make -f /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2
+  make -f /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2
+  make -f /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2
+  make -f /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		C406127A39C0D7302EB8E6B0 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68CE71BFBB634DBA828B1149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804E43FB3BE441168635AED8 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_init.m */,
+				0A5226C11D064BEDB8F3FC5E /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_joystick.m */,
+				2FAFE54CBD1D45A48ED926AA /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_monitor.m */,
+				1D9CBCF67FF24725B27D9A7B /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_time.c */,
+				82C872BDDE37431383B3E0C4 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/cocoa_window.m */,
+				2F22ABF4641B469296E758BF /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/context.c */,
+				78107A0D0C594826A6E907F3 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/init.c */,
+				EF645B86377449ECB8105D82 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/input.c */,
+				2526756EB4BC4FA3B6AA89B0 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/monitor.c */,
+				A9973F8EBF7C474FAC3C6E17 /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/nsgl_context.m */,
+				A26E58A8359C461D947C7EBF /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/posix_tls.c */,
+				131BC71602ED46E19842A16C /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/vulkan.c */,
+				CF387546B51E430AAA69476A /* /Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0437C1524F624F5FB8BBE518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B3EFEB9DDE44DE9AE0996AE /* ZERO_CHECK */;
+			targetProxy = 3C1B8C4AF76648BC89EED410 /* PBXContainerItemProxy */;
+		};
+		3EBA4C41B47E4A839EC64C3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B3EFEB9DDE44DE9AE0996AE /* ZERO_CHECK */;
+			targetProxy = 99258A5485DF4ABF81D73609 /* PBXContainerItemProxy */;
+		};
+		75A6E0C8E14844AB87380CF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C950F60D0B04159821F5D1D /* glfw */;
+			targetProxy = D6238AD95DDE4C63A288051C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E3D7E28096B4D4FB4C76BEB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		110836F15E4D4916A1F6D0C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/build";
+			};
+			name = Debug;
+		};
+		1E72D4199DA14920A10FB6B4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2535144AA5364267866428DE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/build";
+			};
+			name = MinSizeRel;
+		};
+		2B39AE36585149A1A55BD0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/build";
+			};
+			name = Release;
+		};
+		38D4FD2CCCF641ED8A856A6B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5AC701EA870A40D48D292702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include","/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src","/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5B0CE98DD6CE4D6BAB093518 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7D28116616D14105A2BC2A8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include","/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src","/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   -fPIC -Wall ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8F099A9E9D4646A182DC1C2E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include","/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src","/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AE054023E9A64B58999D9C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B2215637D6A44899A0B1E4D7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk;
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/build";
+			};
+			name = RelWithDebInfo;
+		};
+		BB72557589BD4C41A7DB4ADD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/include","/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/glfw-3.2/src","/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG -fPIC -Wall ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E418D9AABF2A4A9580075C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F2930A7D9EB04ED68A336C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F5201D3BE5D0497891FDD6C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/RafaelaHojda/Desktop/Direct-GitHub/module-algorithms-team-yoshi/Asteroids!/Build/glfw-3.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26094822D90A4EF88DE39C83 /* Build configuration list for PBXProject "GLFW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110836F15E4D4916A1F6D0C3 /* Debug */,
+				2B39AE36585149A1A55BD0A6 /* Release */,
+				2535144AA5364267866428DE /* MinSizeRel */,
+				B2215637D6A44899A0B1E4D7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6A11CF7647F443E0A98EA873 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E418D9AABF2A4A9580075C5F /* Debug */,
+				F2930A7D9EB04ED68A336C4F /* Release */,
+				5B0CE98DD6CE4D6BAB093518 /* MinSizeRel */,
+				0E3D7E28096B4D4FB4C76BEB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7CB4312778BE42799DA75759 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5201D3BE5D0497891FDD6C6 /* Debug */,
+				AE054023E9A64B58999D9C79 /* Release */,
+				1E72D4199DA14920A10FB6B4 /* MinSizeRel */,
+				38D4FD2CCCF641ED8A856A6B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CDA753C92B1B4E829CA3CDEB /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D28116616D14105A2BC2A8D /* Debug */,
+				5AC701EA870A40D48D292702 /* Release */,
+				8F099A9E9D4646A182DC1C2E /* MinSizeRel */,
+				BB72557589BD4C41A7DB4ADD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D854FCD01849498CA86B4C7E /* Project object */;
+}
