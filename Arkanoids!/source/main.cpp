@@ -2,11 +2,10 @@
 
 using namespace Angel;
 
-Ship ship;
-asteroid asteroid;
-//std::vector <bullet*> bullets;
-bullet bullet;
-//bullet bullet/*(vec2 pointing, vec2 velocity ) */;
+bar bar;
+ball ball;
+bricks bricks;
+//bricks bricks/*(vec2 pointing, vec2 velocity ) */;
 int counter = 0;
 
 static void error_callback(int error, const char* description)
@@ -19,45 +18,43 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, GLFW_TRUE);
 	if (key == GLFW_KEY_LEFT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		ship.rotateLeft();
+		bar.rotateLeft();
 	if (key == GLFW_KEY_RIGHT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		ship.rotateRight();
+		bar.rotateRight();
 
 	if (key == GLFW_KEY_SPACE){
 		if(action == GLFW_PRESS){
-			ship.start_thruster();
-			bullet.start_thruster();
-			bullet.state.position = ship.state.pointing;
-			bullet.state.velocity = ship.state.velocity;
+			bar.start_thruster();
+			bricks.state.position = bar.state.pointing;
+			bricks.state.velocity = bar.state.velocity;
 		}
 		if(action == GLFW_RELEASE){
-			ship.stop_thruster();
-			bullet.stop_thruster();
-			bullet.state.position = ship.state.pointing;
-			bullet.state.velocity = ship.state.velocity;
+			bar.stop_thruster();
+			bricks.state.position = bar.state.pointing;
+			bricks.state.velocity = bar.state.velocity;
 
 		}
 	}
 	if (key == GLFW_KEY_Z){
 		if(action == GLFW_PRESS){
 
-			//bullet *bullet = new class bullet(ship.state.pointing, ship.state.velocity);
-			//bullets.push_back(bullet);
-			//temp.state.position = ship.state.pointing;
-			//temp.state.velocity = ship.state.velocity;
-			/*vec2 loc = ship.state.pointing;
-			vec2 vel = ship.state.velocity;
-			for(auto& b: bullets){
-				b->state.position += ship.state.pointing;
-				b->state.velocity += ship.state.velocity;
+			//bricks *bricks = new class bricks(bar.state.pointing, bar.state.velocity);
+			//brickss.push_back(bricks);
+			//temp.state.position = bar.state.pointing;
+			//temp.state.velocity = bar.state.velocity;
+			/*vec2 loc = bar.state.pointing;
+			vec2 vel = bar.state.velocity;
+			for(auto& b: brickss){
+				b->state.position += bar.state.pointing;
+				b->state.velocity += bar.state.velocity;
 			} */
-			bullet.pew_pew(ship.state.pointing, ship.state.velocity);
+			bricks.pew_pew(bar.state.pointing, bar.state.velocity);
 			counter +=1;
-			//bullet *bullet;
-			//bullet->pew_pew(ship.state.pointing, ship.state.velocity);
-			//bullets.push_back(bullet);
-			//bullet.state.position = ship.state.pointing;
-			//bullet.state.velocity = ship.state.velocity;
+			//bricks *bricks;
+			//bricks->pew_pew(bar.state.pointing, bar.state.velocity);
+			//brickss.push_back(bricks);
+			//bricks.state.position = bar.state.pointing;
+			//bricks.state.velocity = bar.state.velocity;
 		}
 	}
 }
@@ -67,33 +64,33 @@ void init(){
 	glClearColor(0.0, 0.0, 0.0, 1.0);
 	glHint (GL_LINE_SMOOTH_HINT, GL_NICEST);
 	glHint (GL_POINT_SMOOTH_HINT, GL_NICEST);
-	ship.gl_init();
-	asteroid.gl_init();
-	/*for (int i = 0; i < bullets.size(); i ++){
-		bullets[i]->gl_init();
+	bar.gl_init();
+	ball.gl_init();
+	/*for (int i = 0; i < brickss.size(); i ++){
+		brickss[i]->gl_init();
 	}*/
-	/*for(auto& b: bullets){
+	/*for(auto& b: brickss){
 		b->gl_init();
 	}*/
-	bullet.gl_init();
-	//bullet.gl_init();
+	bricks.gl_init();
+	//bricks.gl_init();
 }
 
 //Call update function 30 times a second
 void animate(){
 	if(glfwGetTime() > 0.033){
 		glfwSetTime(0.0);
-		ship.update_state();
-		asteroid.update_state();
-		/*for(int i = 0; i < bullets.size(); i++){
-			bullets[i]->update_state();
+		bar.update_state();
+		ball.update_state();
+		/*for(int i = 0; i < brickss.size(); i++){
+			brickss[i]->update_state();
 		}*/
-		/*for(auto& b: bullets){
+		/*for(auto& b: brickss){
 			b->update_state();
 		}*/
-		bullet.update_state();
-		//bullet.update_state();
-		asteroid.rotate();
+		bricks.update_state();
+		//bricks.update_state();
+		ball.rotate();
 	}
 }
 
@@ -114,7 +111,7 @@ int main(void)
 	glfwWindowHint(GLFW_SAMPLES, 10);
 	
 	
-	window = glfwCreateWindow(1024, 768, "Asteroids!", NULL, NULL);
+	window = glfwCreateWindow(1024, 768, "balls!", NULL, NULL);
 	if (!window){
 		glfwTerminate();
 		exit(EXIT_FAILURE);
@@ -140,16 +137,9 @@ int main(void)
 		animate();
 		
 		glClear(GL_COLOR_BUFFER_BIT);
-		ship.draw(proj);
-		asteroid.draw(proj);
-		/*for(int i = 0; i < bullets.size(); i ++){
-			bullets[i]->draw(proj);
-		}*/
-		/*for(auto& b: bullets){
-			b->draw(proj);  
-		} */
-		//bullet.draw(proj);
-		bullet.draw(proj);
+		bar.draw(proj);
+		ball.draw(proj);
+		bricks.draw(proj);
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 		
