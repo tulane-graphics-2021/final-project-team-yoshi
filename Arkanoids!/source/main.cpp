@@ -17,10 +17,14 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, GLFW_TRUE);
 	if (key == GLFW_KEY_LEFT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		bar.shiftLeft();
+		if(bar.state.move_left){
+			bar.shiftLeft();
+		}
+	
 	if (key == GLFW_KEY_RIGHT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		bar.shiftRight();
-
+		if(bar.state.move_right){
+			bar.shiftRight();
+		}
 	if (key == GLFW_KEY_SPACE){
 		if(action == GLFW_PRESS){
 			
@@ -74,7 +78,7 @@ int main(void)
 	glfwWindowHint(GLFW_SAMPLES, 10);
 	
 	
-	window = glfwCreateWindow(1024, 768, "balls!", NULL, NULL);
+	window = glfwCreateWindow(1024, 768, "Arkanoid!", NULL, NULL);
 	if (!window){
 		glfwTerminate();
 		exit(EXIT_FAILURE);

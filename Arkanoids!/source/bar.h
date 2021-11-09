@@ -37,7 +37,8 @@ public:
 			return c;
 		}
 		vec2 velocity;       //Velocity
-		bool thruster_on;    //Boolean if a thruster is on
+		bool move_left = true;
+		bool move_right = true;
 	} state;
 	
 	//OpenGL variables for a bar
@@ -55,9 +56,18 @@ public:
 	
 	
 	bar();
-	inline void start_thruster(){ state.thruster_on= true;}
-	inline void stop_thruster() { state.thruster_on= false;}
-	
+	inline void stop_Left(){
+		state.move_left= false;
+		state.move_right = true;
+	}
+	inline void stop_Right(){
+		state.move_left = true;
+		state.move_right = false;
+	}
+	inline void move_Both(){
+		state.move_left = true;
+		state.move_right = true;
+	}
 	inline void shiftLeft() {
 		for (int i = 0; i < 5; i++){
 			bar_vert[i].x += -0.5;

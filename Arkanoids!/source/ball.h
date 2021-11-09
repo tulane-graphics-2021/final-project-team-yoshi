@@ -1,17 +1,17 @@
 //
-//  bricks.h
+//  ball.h
 //  ASTEROIDS
 //
 //  Created by Sara Marie on 10/17/21.
 //
 
-#ifndef bricks_h
-#define bricks_h
+#ifndef ball_h
+#define ball_h
 #include "common.h"
-class bricks{
+class ball{
 	public:
-	vec2 bricks_vert[5];
-	vec3 bricks_color[5];
+	vec2 ball_vert[5];
+	vec3 ball_color[5];
 	
 	struct {
 		vec2 velocity;       //Velocity
@@ -33,7 +33,7 @@ class bricks{
 public:
 	
 	
-	bricks();
+	ball();
 	inline void pew_pew(vec2 position, vec2 velocity){
 		
 	}
@@ -46,4 +46,4 @@ public:
 	bool Remove();
 };
 
-#endif /* bricks_h */
+#endif /* ball_h */

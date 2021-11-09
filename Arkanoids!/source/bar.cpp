@@ -15,9 +15,16 @@ bar::bar(){
 //Called everytime an animation tick happens
 void bar::update_state(){
 	
-	if (bar_vert[3].x > 8){
-		
+	if(bar_vert[1].x < - 7.5){
+		stop_Left();
 	}
+	if(bar_vert[2].x > 7.5){
+		stop_Right();
+	}
+	if (bar_vert[1].x > -7.5 && bar_vert[2].x < 7.5){
+		move_Both();
+	}
+	
 		// Create a vertex array object
 		glBindVertexArray( GLvars.vao );
 		glBindBuffer( GL_ARRAY_BUFFER, GLvars.buffer );
@@ -32,11 +39,11 @@ void bar::gl_init(){
 	//bar
 	//!!!!!!!!Populate bar_vert and bar_color
 	
-	bar_vert[0] = vec2(0,0);
-	bar_vert[1] = vec2(-1,0.25);
-	bar_vert[2] = vec2(1,0.25);
-	bar_vert[3] = vec2(-1,-0.25);
-	bar_vert[4] = vec2(1,-0.25);
+	bar_vert[0] = vec2(0,-7);
+	bar_vert[1] = vec2(-1,0.125 -7);
+	bar_vert[2] = vec2(1,0.125-7);
+	bar_vert[3] = vec2(-1,-0.125-7);
+	bar_vert[4] = vec2(1,-0.125-7);
 	
 	for(int i = 0; i < 5; i++){
 		bar_color[i] = vec3(0.5, 0.5, 0.5);
@@ -107,10 +114,7 @@ void bar::draw(mat4 proj){
 	//Draw something
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 5);
 	
-	if(state.thruster_on){
-		//Maybe draw something different if the thruster is on
-		
-	}
+	
 	
 	glBindVertexArray(0);
 	glUseProgram(0);

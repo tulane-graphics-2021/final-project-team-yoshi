@@ -49,7 +49,7 @@ add_executable(arkanoid WIN32 MACOSX_BUNDLE
 #Windows cleanup
 if (MSVC)
     # Tell MSVC to use main instead of WinMain for Windows subsystem executables
-    set_target_properties(balls PROPERTIES LINK_FLAGS "/ENTRY:mainCRTStartup")
+    set_target_properties(arkanoid PROPERTIES LINK_FLAGS "/ENTRY:mainCRTStartup")
 endif()
 
 #Apple cleanup

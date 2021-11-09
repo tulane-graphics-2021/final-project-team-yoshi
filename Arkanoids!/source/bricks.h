@@ -1,17 +1,17 @@
 //
-//  ball.h
-//  ballS
+//  bricks.h
+//  bricksS
 //
 //  Created by Sara Marie on 10/12/21.
 //
 
-#ifndef ball_h
-#define ball_h
+#ifndef bricks_h
+#define bricks_h
 #include "common.h"
-class ball{
+class bricks{
 	
-	vec2 ball_vert[20];
-	vec3 ball_color[20];
+	vec2 bricks_vert[20];
+	vec3 bricks_color[20];
 	struct {
 		vec2 cur_location;   //Current position of the center
 		float angle;//Rotation angle
@@ -42,7 +42,7 @@ class ball{
 public:
 	
 	
-	ball();
+	bricks();
 	
 	bool is_collision(vec2 point){
 		
@@ -62,4 +62,4 @@ public:
 };
 
 
-#endif /* ball_h */
+#endif /* bricks_h */
