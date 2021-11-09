@@ -34,7 +34,6 @@ void ball::update_state(){
 void ball::gl_init(){
 	
 	//Setting ball Center to (0,0):
-	ball_vert[0] = vec2(0,0);
 	
 	
 	

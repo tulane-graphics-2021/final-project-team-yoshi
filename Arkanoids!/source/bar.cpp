@@ -15,7 +15,9 @@ bar::bar(){
 //Called everytime an animation tick happens
 void bar::update_state(){
 	
+	if (bar_vert[3].x > 8){
 		
+	}
 		// Create a vertex array object
 		glBindVertexArray( GLvars.vao );
 		glBindBuffer( GL_ARRAY_BUFFER, GLvars.buffer );
@@ -30,9 +32,15 @@ void bar::gl_init(){
 	//bar
 	//!!!!!!!!Populate bar_vert and bar_color
 	
+	bar_vert[0] = vec2(0,0);
+	bar_vert[1] = vec2(-1,0.25);
+	bar_vert[2] = vec2(1,0.25);
+	bar_vert[3] = vec2(-1,-0.25);
+	bar_vert[4] = vec2(1,-0.25);
 	
-	
-	
+	for(int i = 0; i < 5; i++){
+		bar_color[i] = vec3(0.5, 0.5, 0.5);
+	}
 	std::string vshader = shader_path + "vshader_bar.glsl";
 	std::string fshader = shader_path + "fshader_bar.glsl";
 	
@@ -97,12 +105,11 @@ void bar::draw(mat4 proj){
 	//If you have a modelview matrix, pass it with proj
 	glUniformMatrix4fv( GLvars.M_location, 1, GL_TRUE, proj );
 	//Draw something
-	glDrawArrays(GL_TRIANGLE_FAN, 0, 6);
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, 5);
 	
 	if(state.thruster_on){
 		//Maybe draw something different if the thruster is on
-		glDrawArrays(GL_TRIANGLE_FAN,5,10);
-		glDrawArrays(GL_TRIANGLE_FAN, 5, 10);
+		
 	}
 	
 	glBindVertexArray(0);

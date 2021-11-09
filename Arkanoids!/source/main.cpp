@@ -5,7 +5,6 @@ using namespace Angel;
 bar bar;
 ball ball;
 bricks bricks;
-//bricks bricks/*(vec2 pointing, vec2 velocity ) */;
 int counter = 0;
 
 static void error_callback(int error, const char* description)
@@ -18,43 +17,22 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, GLFW_TRUE);
 	if (key == GLFW_KEY_LEFT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		bar.rotateLeft();
+		bar.shiftLeft();
 	if (key == GLFW_KEY_RIGHT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		bar.rotateRight();
+		bar.shiftRight();
 
 	if (key == GLFW_KEY_SPACE){
 		if(action == GLFW_PRESS){
-			bar.start_thruster();
-			bricks.state.position = bar.state.pointing;
-			bricks.state.velocity = bar.state.velocity;
+			
 		}
 		if(action == GLFW_RELEASE){
-			bar.stop_thruster();
-			bricks.state.position = bar.state.pointing;
-			bricks.state.velocity = bar.state.velocity;
+			
 
 		}
 	}
 	if (key == GLFW_KEY_Z){
 		if(action == GLFW_PRESS){
-
-			//bricks *bricks = new class bricks(bar.state.pointing, bar.state.velocity);
-			//brickss.push_back(bricks);
-			//temp.state.position = bar.state.pointing;
-			//temp.state.velocity = bar.state.velocity;
-			/*vec2 loc = bar.state.pointing;
-			vec2 vel = bar.state.velocity;
-			for(auto& b: brickss){
-				b->state.position += bar.state.pointing;
-				b->state.velocity += bar.state.velocity;
-			} */
-			bricks.pew_pew(bar.state.pointing, bar.state.velocity);
-			counter +=1;
-			//bricks *bricks;
-			//bricks->pew_pew(bar.state.pointing, bar.state.velocity);
-			//brickss.push_back(bricks);
-			//bricks.state.position = bar.state.pointing;
-			//bricks.state.velocity = bar.state.velocity;
+			
 		}
 	}
 }
@@ -66,14 +44,7 @@ void init(){
 	glHint (GL_POINT_SMOOTH_HINT, GL_NICEST);
 	bar.gl_init();
 	ball.gl_init();
-	/*for (int i = 0; i < brickss.size(); i ++){
-		brickss[i]->gl_init();
-	}*/
-	/*for(auto& b: brickss){
-		b->gl_init();
-	}*/
 	bricks.gl_init();
-	//bricks.gl_init();
 }
 
 //Call update function 30 times a second
@@ -82,15 +53,7 @@ void animate(){
 		glfwSetTime(0.0);
 		bar.update_state();
 		ball.update_state();
-		/*for(int i = 0; i < brickss.size(); i++){
-			brickss[i]->update_state();
-		}*/
-		/*for(auto& b: brickss){
-			b->update_state();
-		}*/
 		bricks.update_state();
-		//bricks.update_state();
-		ball.rotate();
 	}
 }
 

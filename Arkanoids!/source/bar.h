@@ -19,8 +19,8 @@
 class bar{
 public: 
 	//Placeholders so everything compiles.  Customize for your bar
-	vec2 bar_vert[10];
-	vec3 bar_color[10];
+	vec2 bar_vert[5];
+	vec3 bar_color[5];
 	//Record of the bar's state
 	struct {
 		vec2 cur_location;   //Current position of the center
@@ -58,10 +58,10 @@ public:
 	inline void start_thruster(){ state.thruster_on= true;}
 	inline void stop_thruster() { state.thruster_on= false;}
 	
-	
-	
-	inline void rotateLeft() {
-		
+	inline void shiftLeft() {
+		for (int i = 0; i < 5; i++){
+			bar_vert[i].x += -0.5;
+		}
 		
 		// Create a vertex array object
 		glBindVertexArray( GLvars.vao );
@@ -78,10 +78,10 @@ public:
 		glBufferSubData( GL_ARRAY_BUFFER, sizeof(bar_vert), sizeof(bar_color), bar_color );
 	}
 	
-	inline void rotateRight(){
-		
-		
-		
+	inline void shiftRight(){
+		for (int i = 0; i < 5; i++){
+			bar_vert[i].x += 0.5;
+		}
 		// Create a vertex array object
 		glBindVertexArray( GLvars.vao );
 		
