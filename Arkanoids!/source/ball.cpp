@@ -34,9 +34,16 @@ void ball::update_state(){
 void ball::gl_init(){
 	
 	//Setting ball Center to (0,0):
+	ball_vert[0] = vec2(0,0);
+	ball_vert[1] = vec2(-0.125,-0.125);
+	ball_vert[2] = vec2(0.125,-0.125);
+	ball_vert[3] = vec2(0.125,0.125);
+	ball_vert[4] = vec2(-0.125,0.125);
+	ball_vert[5] = vec2(-0.125,-0.125);
 	
-	
-	
+	for(int i = 0; i < 6; i++){
+		ball_color[i] = vec3(1,0,0);
+	}
 	
 	std::string vshader = shader_path + "vshader_ball.glsl";
 	std::string fshader = shader_path + "fshader_ball.glsl";
@@ -95,14 +102,14 @@ void ball::gl_init(){
 }
 //Draw a ball
 void ball::draw(mat4 proj){
-	proj = Scale(0.25, 0.25, 0.25);
+	proj = Scale(0.125, 0.125, 0.125);
 	glUseProgram( GLvars.program );
 	glBindVertexArray( GLvars.vao );
 	
 	//If you have a modelview matrix, pass it with proj
 	glUniformMatrix4fv( GLvars.M_location, 1, GL_TRUE, proj );
 	//Draw something
-	glDrawArrays(GL_TRIANGLE_FAN, 0, 20);
+	glDrawArrays(GL_TRIANGLE_FAN, 0, 6);
 	
 	
 	

@@ -10,8 +10,8 @@
 #include "common.h"
 class ball{
 	public:
-	vec2 ball_vert[5];
-	vec3 ball_color[5];
+	vec2 ball_vert[6];
+	vec3 ball_color[6];
 	
 	struct {
 		vec2 velocity;       //Velocity
@@ -34,7 +34,7 @@ public:
 	
 	
 	ball();
-	inline void pew_pew(vec2 position, vec2 velocity){
+	inline void bounce(/*vec2 position, vec2 velocity */){
 		
 	}
 
