@@ -10,22 +10,11 @@
 #include "common.h"
 class bricks{
 	
-	vec2 bricks_vert[20];
-	vec3 bricks_color[20];
+	vec2 bricks_vert[5];
+	vec3 bricks_color[5];
 	struct {
-		vec2 cur_location;   //Current position of the center
-		float angle;//Rotation angle
-		vec2 pointing;//This function will be helpful to keep track of the direction the ship
-		//is pointing
-		mat2 RotateZ2D( const GLfloat theta ){
-			GLfloat angle = DegreesToRadians * theta;
-			mat2 c;
-			c[0][0] = c[1][1] = cos(angle);
-			c[1][0] = sin(angle);
-			c[0][1] = -c[1][0];
-			return c;
-		}
-		vec2 velocity;       //Velocity
+		vec2 loc;
+		vec3 color;
 	} state;
 	
 	//OpenGL variables for a ship
@@ -38,7 +27,7 @@ class bricks{
 		GLint M_location;     //Reference to matrix in shader
 	} GLvars;
 	
-	
+	std::vector < bricks > bricks_obj;
 public:
 	
 	
@@ -48,9 +37,6 @@ public:
 		
 	}
 	
-	inline void rotate() {
-		
-	}
 	
 	
 	void update_state();

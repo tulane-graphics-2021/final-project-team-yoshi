@@ -8,12 +8,34 @@
 #include "common.h"
 //ball constructor
 ball::ball(){
+	state.velocity = vec2(0.125, 0.125);
+
 };
 
 //Called everytime an animation tick happens
+
 void ball::update_state(){
-	
-	
+	if(state.launched){
+		state.position = ball_vert[0];
+
+		if(ball_vert[0].y > 7.55){ 				// if ball hits top
+			state.velocity.y = -state.velocity.y;
+		}
+		if (ball_vert[0].y < -7.55){			// if ball hits bottom
+			state.launched = false;
+		}
+		if((ball_vert[0].x > 7.55) || (ball_vert[0].x < -7.55)){ // if ball hits side
+			state.velocity.x = -state.velocity.x;
+		}
+		if(state.ball_on_bar){
+			state.velocity.x = state.velocity.x * state.x_pos/abs(state.x_pos);
+			state.velocity.y = -state.velocity.y;
+		}
+		for(int i = 0; i < 6; i++){
+			ball_vert[i] += state.velocity;
+		}
+		std::cout << state.velocity << std::endl;
+	}
 	// Create a vertex array object
 	glBindVertexArray( GLvars.vao );
 	
@@ -33,13 +55,12 @@ void ball::update_state(){
 //Initialize the gl state and variables
 void ball::gl_init(){
 	
-	//Setting ball Center to (0,0):
-	ball_vert[0] = vec2(0,0);
-	ball_vert[1] = vec2(-0.125,-0.125);
-	ball_vert[2] = vec2(0.125,-0.125);
-	ball_vert[3] = vec2(0.125,0.125);
-	ball_vert[4] = vec2(-0.125,0.125);
-	ball_vert[5] = vec2(-0.125,-0.125);
+	ball_vert[0] = vec2(0,-6.75); //center
+	ball_vert[1] = vec2(-0.125,-0.125-6.72);
+	ball_vert[2] = vec2(0.125,-0.125-6.72);
+	ball_vert[3] = vec2(0.125,0.125-6.72);
+	ball_vert[4] = vec2(-0.125,0.125-6.72);
+	ball_vert[5] = vec2(-0.125,-0.125-6.72);
 	
 	for(int i = 0; i < 6; i++){
 		ball_color[i] = vec3(1,0,0);

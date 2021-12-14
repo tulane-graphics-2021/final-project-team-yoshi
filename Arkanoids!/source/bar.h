@@ -108,7 +108,9 @@ public:
 	}
 	
 	void update_state();
-	
+	vec2 get_bar_vert(int index){
+		return bar_vert[index];
+	}
 	void gl_init();
 	
 	void draw(mat4 proj);

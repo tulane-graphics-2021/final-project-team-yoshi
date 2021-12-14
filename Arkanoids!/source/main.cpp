@@ -19,20 +19,26 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 	if (key == GLFW_KEY_LEFT && (action == GLFW_PRESS || action == GLFW_REPEAT))
 		if(bar.state.move_left){
 			bar.shiftLeft();
+			if(ball.state.launched == false){
+				ball.shiftLeft();
+			}
 		}
 	
 	if (key == GLFW_KEY_RIGHT && (action == GLFW_PRESS || action == GLFW_REPEAT))
-		if(bar.state.move_right){
+		if(bar.state.move_right ){
 			bar.shiftRight();
+			if(ball.state.launched == false){
+				ball.shiftRight();
+			}
 		}
 	if (key == GLFW_KEY_SPACE){
 		if(action == GLFW_PRESS){
-			
+			if(ball.state.launched == false){
+				ball.launch();
+			}
 		}
-		if(action == GLFW_RELEASE){
-			
-
-		}
+		//if(action == GLFW_RELEASE){
+		//}
 	}
 	if (key == GLFW_KEY_Z){
 		if(action == GLFW_PRESS){
@@ -78,7 +84,7 @@ int main(void)
 	glfwWindowHint(GLFW_SAMPLES, 10);
 	
 	
-	window = glfwCreateWindow(1024, 768, "Arkanoid!", NULL, NULL);
+	window = glfwCreateWindow(1024, 1024, "Arkanoid!", NULL, NULL);
 	if (!window){
 		glfwTerminate();
 		exit(EXIT_FAILURE);
@@ -99,17 +105,15 @@ int main(void)
 		
 		//Pick a coordinate system that makes the most sense to you
 		//(left, right, top, bottom)
-		mat4 proj = Ortho2D(-1.0, 1.0, -1.0, 1.0);
-		
+		mat4 proj = Ortho2D(-7.5, 7.5, -7.5, 7.5);
+		ball.reflect(bar.get_bar_vert(1), bar.get_bar_vert(2), bar.get_bar_vert(0), ball.get_ball_vert(1));
 		animate();
-		
 		glClear(GL_COLOR_BUFFER_BIT);
 		bar.draw(proj);
 		ball.draw(proj);
 		bricks.draw(proj);
 		glfwSwapBuffers(window);
 		glfwPollEvents();
-		
 	}
 	
 	glfwDestroyWindow(window);

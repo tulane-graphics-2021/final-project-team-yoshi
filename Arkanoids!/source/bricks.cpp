@@ -34,7 +34,6 @@ void bricks::update_state(){
 void bricks::gl_init(){
 	
 	
-	
 	std::string vshader = shader_path + "vshader_bricks.glsl";
 	std::string fshader = shader_path + "fshader_bricks.glsl";
 	

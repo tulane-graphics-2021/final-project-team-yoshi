@@ -24,26 +24,25 @@ void bar::update_state(){
 	if (bar_vert[1].x > -7.5 && bar_vert[2].x < 7.5){
 		move_Both();
 	}
-	
-		// Create a vertex array object
+	state.cur_location = bar_vert[0];
+	// Create a vertex array object
 		glBindVertexArray( GLvars.vao );
 		glBindBuffer( GL_ARRAY_BUFFER, GLvars.buffer );
 		glBufferData( GL_ARRAY_BUFFER, sizeof(bar_vert) + sizeof(bar_color), NULL, GL_STATIC_DRAW );
-		glBufferSubData( GL_ARRAY_BUFFER, 0, sizeof(bar_vert), bar_vert );
-		glBufferSubData( GL_ARRAY_BUFFER, sizeof(bar_vert), sizeof(bar_color), bar_color );
-		
-	
+		glBufferSubData( GL_ARRAY_BUFFER, 0, sizeof(bar_vert), bar_vert);
+		glBufferSubData( GL_ARRAY_BUFFER, sizeof(bar_vert), sizeof(bar_color), bar_color);
 }
+
 //Initialize the gl state and variables
 void bar::gl_init(){
 	//bar
 	//!!!!!!!!Populate bar_vert and bar_color
 	
 	bar_vert[0] = vec2(0,-7);
-	bar_vert[1] = vec2(-1,0.125 -7);
-	bar_vert[2] = vec2(1,0.125-7);
-	bar_vert[3] = vec2(-1,-0.125-7);
-	bar_vert[4] = vec2(1,-0.125-7);
+	bar_vert[1] = vec2(-1,-6.875);
+	bar_vert[2] = vec2(1,-6.875);
+	bar_vert[3] = vec2(-1,-7.125);
+	bar_vert[4] = vec2(1,-7.125);
 	
 	for(int i = 0; i < 5; i++){
 		bar_color[i] = vec3(0.5, 0.5, 0.5);
