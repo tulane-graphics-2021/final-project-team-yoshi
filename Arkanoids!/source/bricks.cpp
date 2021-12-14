@@ -7,8 +7,19 @@
 
 #include "common.h"
 //bricks constructor
-bricks::bricks( ){
+bricks::bricks(vec2 position){
+	bricks_vert[0] = vec2(-0.5, -0.5);
+	bricks_vert[1] = vec2(-0.5,  1);
+	bricks_vert[2] = vec2( 3.0, -0.5);
+	bricks_vert[3] = vec2( 3.0,  1);
+	for (int i = 0; i < 4; i ++){
+		bricks_vert[i] += position;
+	}
 	
+	
+	for(int i = 0; i < 4; i++){
+		bricks_color[i] = vec3(0, 1, 0);
+	}
 };
 
 //Called everytime an animation tick happens
@@ -39,14 +50,7 @@ void bricks::gl_init(){
 //	bricks_vert[3] = vec2(-1-6,-7.125+15);
 //	bricks_vert[4] = vec2(1-6,-7.125+15);
 	
-	bricks_vert[0] = vec2(-0.5, -0.5);
-	bricks_vert[1] = vec2(-0.5,  1);
-	bricks_vert[2] = vec2( 3.0, -0.5);
-	bricks_vert[3] = vec2( 3.0,  1);
 	
-	for(int i = 0; i < 4; i++){
-		bricks_color[i] = vec3(0, 1, 0);
-	}
 	
 	std::string vshader = shader_path + "vshader_bricks.glsl";
 	std::string fshader = shader_path + "fshader_bricks.glsl";

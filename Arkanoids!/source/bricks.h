@@ -31,7 +31,7 @@ class bricks{
 public:
 	
 	
-	bricks();
+	bricks(vec2 position);
 	
 	bool is_collision(vec2 point){
 		

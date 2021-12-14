@@ -4,7 +4,8 @@ using namespace Angel;
 
 bar bar;
 ball ball;
-bricks bricks;
+std::vector<bricks> all_bricks;
+
 int counter = 0;
 
 static void error_callback(int error, const char* description)
@@ -54,7 +55,14 @@ void init(){
 	glHint (GL_POINT_SMOOTH_HINT, GL_NICEST);
 	bar.gl_init();
 	ball.gl_init();
-	bricks.gl_init();
+	for(int i = 0; i < 5; i++){
+		for (int j = 0; j < 5; j++){
+			bricks temp_brick(vec2(i, j));
+			all_bricks.push_back(temp_brick);
+		}
+		all_bricks[i].gl_init();
+	}
+	
 }
 
 //Call update function 30 times a second
@@ -63,7 +71,10 @@ void animate(){
 		glfwSetTime(0.0);
 		bar.update_state();
 		ball.update_state();
-		bricks.update_state();
+		//brick1.update_state();
+		for(int i = 0; i < 5; i++){
+			all_bricks[i].update_state();
+		}
 	}
 }
 
@@ -111,7 +122,10 @@ int main(void)
 		glClear(GL_COLOR_BUFFER_BIT);
 		bar.draw(proj);
 		ball.draw(proj);
-		bricks.draw(proj);
+		//brick1.draw(proj);
+		for(int i = 0; i < 5; i++){
+			all_bricks[i].draw(proj);
+		}
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
