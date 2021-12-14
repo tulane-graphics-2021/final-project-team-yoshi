@@ -33,6 +33,20 @@ void bricks::update_state(){
 //Initialize the gl state and variables
 void bricks::gl_init(){
 	
+//	bricks_vert[0] = vec2(0-6,-7+15);
+//	bricks_vert[1] = vec2(-1-6,-6.875+15);
+//	bricks_vert[2] = vec2(1-6,-6.875+15);
+//	bricks_vert[3] = vec2(-1-6,-7.125+15);
+//	bricks_vert[4] = vec2(1-6,-7.125+15);
+	
+	bricks_vert[0] = vec2(-0.5, -0.5);
+	bricks_vert[1] = vec2(-0.5,  1);
+	bricks_vert[2] = vec2( 3.0, -0.5);
+	bricks_vert[3] = vec2( 3.0,  1);
+	
+	for(int i = 0; i < 4; i++){
+		bricks_color[i] = vec3(0, 1, 0);
+	}
 	
 	std::string vshader = shader_path + "vshader_bricks.glsl";
 	std::string fshader = shader_path + "fshader_bricks.glsl";
@@ -98,7 +112,7 @@ void bricks::draw(mat4 proj){
 	//If you have a modelview matrix, pass it with proj
 	glUniformMatrix4fv( GLvars.M_location, 1, GL_TRUE, proj );
 	//Draw something
-	glDrawArrays(GL_TRIANGLE_STRIP, 0, 5);
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 	
 	glBindVertexArray(0);
 	glUseProgram(0);

@@ -10,8 +10,8 @@
 #include "common.h"
 class bricks{
 	
-	vec2 bricks_vert[5];
-	vec3 bricks_color[5];
+	vec2 bricks_vert[4];
+	vec3 bricks_color[4];
 	struct {
 		vec2 loc;
 		vec3 color;
