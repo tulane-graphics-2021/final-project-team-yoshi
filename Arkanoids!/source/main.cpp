@@ -55,14 +55,34 @@ void init(){
 	glHint (GL_POINT_SMOOTH_HINT, GL_NICEST);
 	bar.gl_init();
 	ball.gl_init();
-	for(int i = 0; i < 5; i++){
-		for (int j = 0; j < 5; j++){
-			bricks temp_brick(vec2(i, j));
+	
+	// Creates red row of bricks
+	for(int i = 0; i < 15; i++){
+			bricks temp_brick(vec2(i,0), vec3(1, 0, 0));
 			all_bricks.push_back(temp_brick);
-		}
-		all_bricks[i].gl_init();
+			all_bricks[i].gl_init();
 	}
 	
+	// Creates orange row of bricks
+	for(int j = 15; j < 30; j++){
+
+		vec2 orig_pos = all_bricks[j % 15 ].get_position(j % 15 );
+		bricks temp_brick(vec2(orig_pos.x + j%15,orig_pos.y -0.75), vec3(1, 0.5, 0));
+		all_bricks.push_back(temp_brick);
+		all_bricks[j].gl_init();
+
+	}
+	
+	//Creates yellow row of bricks
+	for(int k = 30; k < 45; k++){
+		vec2 orig_pos = all_bricks[k % 15].get_position(k % 15);
+		bricks temp_brick(vec2(orig_pos.x + k%15,orig_pos.y - 4), vec3(1, 1, 0));
+		all_bricks.push_back(temp_brick);
+		all_bricks[k].gl_init();
+
+	}
+	
+
 }
 
 //Call update function 30 times a second
@@ -72,7 +92,7 @@ void animate(){
 		bar.update_state();
 		ball.update_state();
 		//brick1.update_state();
-		for(int i = 0; i < 5; i++){
+		for(int i = 0; i < all_bricks.size(); i++){
 			all_bricks[i].update_state();
 		}
 	}
@@ -123,7 +143,7 @@ int main(void)
 		bar.draw(proj);
 		ball.draw(proj);
 		//brick1.draw(proj);
-		for(int i = 0; i < 5; i++){
+		for(int i = 0; i < all_bricks.size(); i++){
 			all_bricks[i].draw(proj);
 		}
 		glfwSwapBuffers(window);

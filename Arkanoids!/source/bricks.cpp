@@ -7,18 +7,26 @@
 
 #include "common.h"
 //bricks constructor
-bricks::bricks(vec2 position){
-	bricks_vert[0] = vec2(-0.5, -0.5);
-	bricks_vert[1] = vec2(-0.5,  1);
-	bricks_vert[2] = vec2( 3.0, -0.5);
-	bricks_vert[3] = vec2( 3.0,  1);
-	for (int i = 0; i < 4; i ++){
+bricks::bricks(vec2 position, vec3 color){
+	bricks_vert[0] = vec2(-7.5, -0.125+7);
+	bricks_vert[1] = vec2(-7.5,  0.25+7);
+	bricks_vert[2] = vec2( -6.5, -0.125+7);
+	bricks_vert[3] = vec2( -6.5,  0.25+7);
+	
+	bricks_vert[4] = vec2(-7.5, -0.125+7);
+	bricks_vert[5] = vec2(-7.5,  0.25+7);
+	bricks_vert[6] = vec2( -6.5, 0.25+7);
+	bricks_vert[7] = vec2( -6.5,  -0.125+7);
+	for (int i = 0; i < 8; i ++){
 		bricks_vert[i] += position;
 	}
 	
 	
 	for(int i = 0; i < 4; i++){
-		bricks_color[i] = vec3(0, 1, 0);
+		bricks_color[i] = vec3(color);
+	}
+	for(int j = 4; j < 8; j++){
+		bricks_color[j] = vec3(0,0,0);
 	}
 };
 
@@ -109,7 +117,7 @@ void bricks::gl_init(){
 }
 //Draw a bricks
 void bricks::draw(mat4 proj){
-	proj = Scale(0.025, 0.025, 0.025);
+	proj = Scale(0.125, 0.125, 0.125);
 	glUseProgram( GLvars.program );
 	glBindVertexArray( GLvars.vao );
 	
@@ -117,7 +125,7 @@ void bricks::draw(mat4 proj){
 	glUniformMatrix4fv( GLvars.M_location, 1, GL_TRUE, proj );
 	//Draw something
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-	
+	glDrawArrays(GL_LINE_LOOP, 4,4);
 	glBindVertexArray(0);
 	glUseProgram(0);
 	

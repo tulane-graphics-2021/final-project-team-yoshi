@@ -10,8 +10,8 @@
 #include "common.h"
 class bricks{
 	
-	vec2 bricks_vert[4];
-	vec3 bricks_color[4];
+	vec2 bricks_vert[8];
+	vec3 bricks_color[8];
 	struct {
 		vec2 loc;
 		vec3 color;
@@ -31,12 +31,14 @@ class bricks{
 public:
 	
 	
-	bricks(vec2 position);
+	bricks(vec2 position, vec3 color);
 	
 	bool is_collision(vec2 point){
 		
 	}
-	
+	vec2 get_position(int index){
+		bricks_vert[index];
+	}
 	
 	
 	void update_state();

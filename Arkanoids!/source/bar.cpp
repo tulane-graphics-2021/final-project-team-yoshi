@@ -45,7 +45,7 @@ void bar::gl_init(){
 	bar_vert[4] = vec2(1,-7.125);
 	
 	for(int i = 0; i < 5; i++){
-		bar_color[i] = vec3(0.5, 0.5, 0.5);
+		bar_color[i] = vec3(0.5, 0.5, 1);
 	}
 	std::string vshader = shader_path + "vshader_bar.glsl";
 	std::string fshader = shader_path + "fshader_bar.glsl";

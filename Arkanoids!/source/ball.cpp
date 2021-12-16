@@ -34,7 +34,6 @@ void ball::update_state(){
 		for(int i = 0; i < 6; i++){
 			ball_vert[i] += state.velocity;
 		}
-		std::cout << state.velocity << std::endl;
 	}
 	// Create a vertex array object
 	glBindVertexArray( GLvars.vao );
@@ -63,7 +62,7 @@ void ball::gl_init(){
 	ball_vert[5] = vec2(-0.125,-0.125-6.72);
 	
 	for(int i = 0; i < 6; i++){
-		ball_color[i] = vec3(1,0,0);
+		ball_color[i] = vec3(1,1,1);
 	}
 	
 	std::string vshader = shader_path + "vshader_ball.glsl";
