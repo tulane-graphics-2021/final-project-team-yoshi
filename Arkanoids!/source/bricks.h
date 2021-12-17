@@ -15,6 +15,7 @@ class bricks{
 	struct {
 		vec2 loc;
 		vec3 color;
+		bool brick_hit;
 	} state;
 	
 	//OpenGL variables for a ship
@@ -33,11 +34,15 @@ public:
 	
 	bricks(vec2 position, vec3 color);
 	
+	bool brick_exist(){
+		return state.brick_hit;
+	}
+	
 	bool is_collision(vec2 point){
 		
 	}
 	vec2 get_position(int index){
-		bricks_vert[index];
+		return bricks_vert[index];
 	}
 	
 	

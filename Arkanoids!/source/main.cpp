@@ -56,33 +56,42 @@ void init(){
 	bar.gl_init();
 	ball.gl_init();
 	
-	// Creates red row of bricks
+	// Creates bricks
 	for(int i = 0; i < 15; i++){
-			bricks temp_brick(vec2(i,0), vec3(1, 0, 0));
-			all_bricks.push_back(temp_brick);
-			all_bricks[i].gl_init();
+		if((i >=0) && (i < 15)){
+			if(i%2 == 0){
+				bricks temp_brick(vec2(i,0), vec3(1, 0, 0));
+				all_bricks.push_back(temp_brick);
+				all_bricks[i].gl_init();
+			}
+			if(i%2 != 0){
+				bricks temp_brick(vec2(i,-0.75), vec3(0, 1, 0));
+				all_bricks.push_back(temp_brick);
+				all_bricks[i].gl_init();
+			}
+		}
+//		if((i >=15) && (i < 30)){
+//			if(i == 15){
+//				vec2 orig_pos = all_bricks[14].get_position(0);
+//				bricks temp_brick(vec2(orig_pos.x - 14,-0.75 *2), vec3(1, 0, 0));
+//				all_bricks.push_back(temp_brick);
+//				all_bricks[i].gl_init();
+//			}
+//			if(i%2 == 0){
+//				//vec2 orig_pos = all_bricks[i%15].get_position(0);
+//				bricks temp_brick(vec2(i%15,-0.75 *3), vec3(0, 1, 0));
+//				all_bricks.push_back(temp_brick);
+//				all_bricks[i].gl_init();
+//			}
+//
+//			if(i%2 != 0){
+//				//vec2 orig_pos = all_bricks[i%15].get_position(0);
+//				bricks temp_brick(vec2(i%15,-0.75 * 2), vec3(1, 0, 0));
+//				all_bricks.push_back(temp_brick);
+//				all_bricks[i].gl_init();
+//			}
+//		}
 	}
-	
-	// Creates orange row of bricks
-	for(int j = 15; j < 30; j++){
-
-		vec2 orig_pos = all_bricks[j % 15 ].get_position(j % 15 );
-		bricks temp_brick(vec2(orig_pos.x + j%15,orig_pos.y -0.75), vec3(1, 0.5, 0));
-		all_bricks.push_back(temp_brick);
-		all_bricks[j].gl_init();
-
-	}
-	
-	//Creates yellow row of bricks
-	for(int k = 30; k < 45; k++){
-		vec2 orig_pos = all_bricks[k % 15].get_position(k % 15);
-		bricks temp_brick(vec2(orig_pos.x + k%15,orig_pos.y - 4), vec3(1, 1, 0));
-		all_bricks.push_back(temp_brick);
-		all_bricks[k].gl_init();
-
-	}
-	
-
 }
 
 //Call update function 30 times a second
@@ -91,13 +100,28 @@ void animate(){
 		glfwSetTime(0.0);
 		bar.update_state();
 		ball.update_state();
-		//brick1.update_state();
 		for(int i = 0; i < all_bricks.size(); i++){
 			all_bricks[i].update_state();
 		}
 	}
 }
 
+void hit_brick(vec2 ball_pos){
+		float brick_w = 0.375;
+		float brick_h = 1.0;
+		float ball_w = 0.25;
+		float ball_height = 0.25;
+		ball.state.ball_on_brick = false;
+	for (int i = 0; i < all_bricks.size(); i++){
+		vec2 cur_brick = all_bricks[i].get_position(0);
+		if((cur_brick.x < ball_pos.x + ball_w) &&
+		   (cur_brick.x + brick_w > ball_pos.x) &&
+		   (cur_brick.y < ball_pos.y + ball_height) &&
+		   (brick_h + cur_brick.y > ball_pos.y)){
+			ball.state.ball_on_brick = true;
+		}
+	}
+}
 int main(void)
 {
 	GLFWwindow* window;
@@ -128,7 +152,6 @@ int main(void)
 	glfwSwapInterval(1);
 	
 	init();
-	
 	while (!glfwWindowShouldClose(window)){
 		int width, height;
 		glfwGetFramebufferSize(window, &width, &height);
@@ -137,7 +160,13 @@ int main(void)
 		//Pick a coordinate system that makes the most sense to you
 		//(left, right, top, bottom)
 		mat4 proj = Ortho2D(-7.5, 7.5, -7.5, 7.5);
-		ball.reflect(bar.get_bar_vert(1), bar.get_bar_vert(2), bar.get_bar_vert(0), ball.get_ball_vert(1));
+		
+		ball.reflect(bar.get_bar_vert(1), bar.get_bar_vert(2), bar.get_bar_vert(0), ball.get_ball_vert(0));
+		
+		hit_brick(ball.get_ball_vert(0));
+		
+		
+		
 		animate();
 		glClear(GL_COLOR_BUFFER_BIT);
 		bar.draw(proj);

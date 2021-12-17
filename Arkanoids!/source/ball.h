@@ -19,6 +19,7 @@ class ball{
 		float x_pos;
 		bool launched = false;
 		bool ball_on_bar;
+		bool ball_on_brick; 
 	} state;
 	
 	//OpenGL variables for a ship
@@ -48,6 +49,7 @@ public:
 			state.x_pos = ball_vert[0].x + center_trans;
 		}
 	}
+		
 	inline void shiftLeft() {
 		for (int i = 0; i < 6; i++){
 			ball_vert[i].x += -0.5;

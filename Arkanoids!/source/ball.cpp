@@ -22,18 +22,27 @@ void ball::update_state(){
 			state.velocity.y = -state.velocity.y;
 		}
 		if (ball_vert[0].y < -7.55){			// if ball hits bottom
-			state.launched = false;
+			state.velocity = vec2(0,0);
 		}
 		if((ball_vert[0].x > 7.55) || (ball_vert[0].x < -7.55)){ // if ball hits side
 			state.velocity.x = -state.velocity.x;
 		}
-		if(state.ball_on_bar){
-			state.velocity.x = state.velocity.x * state.x_pos/abs(state.x_pos);
+		if(state.ball_on_bar){ // if ball hits paddle/bar
+			if(state.x_pos > 0 ){ // if ball hits left side of bar, bounces left
+				state.velocity.x = 0.125;
+			}
+			if(state.x_pos < 0){ // if ball hits right side of bar, bounces right
+				state.velocity.x =  -0.125;
+			}
 			state.velocity.y = -state.velocity.y;
+		}
+		if(state.ball_on_brick){
+			state.velocity = -state.velocity;
 		}
 		for(int i = 0; i < 6; i++){
 			ball_vert[i] += state.velocity;
 		}
+		
 	}
 	// Create a vertex array object
 	glBindVertexArray( GLvars.vao );

@@ -7,20 +7,21 @@
 
 #include "common.h"
 //bricks constructor
+
 bricks::bricks(vec2 position, vec3 color){
-	bricks_vert[0] = vec2(-7.5, -0.125+7);
-	bricks_vert[1] = vec2(-7.5,  0.25+7);
+	bricks_vert[0] = vec2(-7.5, -0.125+7); //bottom left
+	bricks_vert[1] = vec2(-7.5,  0.25+7);	
 	bricks_vert[2] = vec2( -6.5, -0.125+7);
-	bricks_vert[3] = vec2( -6.5,  0.25+7);
+	bricks_vert[3] = vec2( -6.5,  0.25+7);	//top right
 	
 	bricks_vert[4] = vec2(-7.5, -0.125+7);
 	bricks_vert[5] = vec2(-7.5,  0.25+7);
 	bricks_vert[6] = vec2( -6.5, 0.25+7);
 	bricks_vert[7] = vec2( -6.5,  -0.125+7);
+	
 	for (int i = 0; i < 8; i ++){
 		bricks_vert[i] += position;
 	}
-	
 	
 	for(int i = 0; i < 4; i++){
 		bricks_color[i] = vec3(color);
