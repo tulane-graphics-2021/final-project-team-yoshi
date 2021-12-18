@@ -7,245 +7,245 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		9BC4B74CAEED4E1F87D6FA43 /* ZERO_CHECK */ = {
+		25AE63C139E94F168EA873B8 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 1015AFA1DF8A47D789F13EEB /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 86CE89D262974603B78D904E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				BDC66DD45B4E4D9BAD1DB254 /* CMake Rules */,
+				5591145D6FBF43DBA1EF0207 /* CMake Rules */,
+			);
+			dependencies = (
+				D3FD51A9CE224F6091F6D364 /* PBXTargetDependency */,
+				A78A00F3875C477F921B8315 /* PBXTargetDependency */,
+				3E1EE32EA01A4ED8BEF71391 /* PBXTargetDependency */,
+				B9FB921D0F204966B0AF1AF2 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		9DB20104482D46818D23A821 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 353B49260DDF4BBF918629E7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				B9546DFC554D4293B9F47494 /* CMake Rules */,
 			);
 			dependencies = (
 			);
 			name = ZERO_CHECK;
 			productName = ZERO_CHECK;
 		};
-		EC4D5A24C3C146988E2CCD4B /* ALL_BUILD */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 08F403DE0D444322903B2291 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-			buildPhases = (
-				B86911093815474DA9534D60 /* CMake Rules */,
-			);
-			dependencies = (
-				F2D2A94EBEB4495DA170DFCF /* PBXTargetDependency */,
-				4F4DAB80B6BB4CA7949C7A42 /* PBXTargetDependency */,
-				E4B82619FE344B44BE4BC78C /* PBXTargetDependency */,
-				995B76F180E14F17A19E73F5 /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		03BA4B5478F74486BF8B7FE5 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CE58A869621A4ABD82149280 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */; };
-		065248DC0E8643C0B2863CE1 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bar.h */ = {isa = PBXBuildFile; fileRef = 9C408A55B6B849C48E3202BC /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bar.h */; };
-		08C80AA1CA434BE0997A31D6 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad.c */ = {isa = PBXBuildFile; fileRef = CCC27C5D523B44A7B8692CF7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad.c */; };
-		09120EB8D7BF40ACB6E674C0 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = FE0DA5D925654DF9A7EF7C71 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_time.c */; };
-		0ADC36BE50704310BBA0AD5B /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 12DA12A4FB61463D82E3438B /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist */; };
-		10563599C72547C0B4956C29 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/Angel.h */ = {isa = PBXBuildFile; fileRef = E49DC148ED664A8CAF6F2788 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/Angel.h */; };
-		11B45A0235EB4143A2FFA68C /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 2368D34A2C32461FAAA091E0 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_platform.h */; };
-		13008D6162E740EFB67FE834 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = D13AB1958BE943129A0C5781 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.m */; };
-		1318C3ED797D4E8D91091BD3 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/init.c */ = {isa = PBXBuildFile; fileRef = 39E36460D6E14E6DB222AFDF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/init.c */; };
-		1DAE093AA8F54E13A1BB38E7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/context.c */ = {isa = PBXBuildFile; fileRef = 38B519617BA84431918B2D37 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/context.c */; };
-		1F633C1322694778A7AAFF42 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common.h */ = {isa = PBXBuildFile; fileRef = 1E55A078ECC146E2ABBD89F7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common.h */; };
-		279BB0D8ECA04BC387D200B7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 542DC19F7D004D3398386D61 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3.h */; };
-		2DCFC4B6E0B84FC780566B58 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = BCF969EBDCE042E4AEECD5F6 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/vulkan.c */; };
-		32E9A3A5B20647B1AB4580BC /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = 9FA1FC31B5E54DAE90C37DD5 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.m */; };
-		3B51F3327D6B4656ABFBAB6A /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = F3F40D63E682400E82CD5EC4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.h */; };
-		49AD5392A1004E379D0100B4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp */ = {isa = PBXBuildFile; fileRef = F1749994BA6F4BCBBDF2660F /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp */; };
-		4AB8AD3F72B74ACD9DC9BC68 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/window.c */ = {isa = PBXBuildFile; fileRef = FF792F285A4B4EBAB7C3CA75 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/window.c */; };
-		61863343CE344CA691B2AFCE /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/input.c */ = {isa = PBXBuildFile; fileRef = 1F039E89A96A4EA1AA728CB9 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/input.c */; };
-		62AC6C57A0D44909AA8C594F /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/internal.h */ = {isa = PBXBuildFile; fileRef = 14D286A2DC714D998F21A0D6 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/internal.h */; };
-		62C275F2ABBD4ACEB9274580 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/vec.h */ = {isa = PBXBuildFile; fileRef = 0600BCD6C61946A69D3D3AAA /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/vec.h */; };
-		68968622703443EFB8BC615D /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/main.cpp */ = {isa = PBXBuildFile; fileRef = 34036DAEF16248B8838ADE5D /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/main.cpp */; };
-		69A728D7EEA44E379A69F9A9 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = AF670AF6007C4F5C80F5E8BB /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_init.m */; };
-		6E04CAAABD684107A8B35FA7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 542DBB90C41F4C139F1802A4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */; };
-		84E62FE8F06B4536B1341D63 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 5E3B945F635B47BEA40BBC6E /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3native.h */; };
-		8D842AE3F28F4F49B3835819 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bricks.h */ = {isa = PBXBuildFile; fileRef = 68168B77DAEE4601A643C976 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bricks.h */; };
-		9299B09D24314F59B8A00F7C /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = D3A67B198A9C41878AA73556 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.h */; };
-		9629846EE14242788BEE1A1A /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bricks.cpp */ = {isa = PBXBuildFile; fileRef = A0DA45C0100C48CAADAFA751 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bricks.cpp */; };
-		9F72E24F3DE842119648770B /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.h */ = {isa = PBXBuildFile; fileRef = 8624CE1C90FA4066A17EC67D /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.h */; };
-		A0417E74DE46432EB9D9F04C /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/fshader_bar.glsl */ = {isa = PBXBuildFile; fileRef = 088E65F2ACD340E6B5407AE4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/fshader_bar.glsl */; };
-		AC06214B67A54CC1BEB6758A /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/ball.h */ = {isa = PBXBuildFile; fileRef = BF95A6011D5541A58B6D29AF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/ball.h */; };
-		B68C2C475D2248E7A3523016 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/vshader_bar.glsl */ = {isa = PBXBuildFile; fileRef = C314B0C0DA244181955CC991 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/vshader_bar.glsl */; };
-		BCD4D3D73E9F479085AC8482 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/CheckError.h */ = {isa = PBXBuildFile; fileRef = 409767DEE9264F2AB9AF5629 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/CheckError.h */; };
-		C14D6B534C414314B9C2816F /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/ball.cpp */ = {isa = PBXBuildFile; fileRef = 2D818BCDE9EA43A08B62FB74 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/ball.cpp */; };
-		C7F0025B91424965A0B488E7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad/glad.h */ = {isa = PBXBuildFile; fileRef = 75C7C1C0156C4B42A81785C9 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad/glad.h */; };
-		CA0B8AAA50CE4FD092BE6DF1 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/mat.h */ = {isa = PBXBuildFile; fileRef = 8C55A91AAD804FE8B38AAC09 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/mat.h */; };
-		CD4F8DF12B2D49FE9AC4E769 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 0481B051CC9E4B7D8868F337 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/monitor.c */; };
-		D6FE2F9AE3C24A5EB2E6B2EA /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.h */ = {isa = PBXBuildFile; fileRef = 5B761ECDFBF44829B4D74DAF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.h */; };
-		D9652E55E78E4037A7C29EC5 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 26D1D6F6791643CD8EEF7BCA /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_window.m */; };
-		E0043B187E1947CC8FA5CD8D /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bar.cpp */ = {isa = PBXBuildFile; fileRef = 1AB0CF78D4EE4B5392A286AB /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bar.cpp */; };
-		EC7FCFE0368A4BDFA290FFC2 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 3221B663D2F7415696AD9A9A /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/glfw_config.h */; };
-		F6449E6613BB4270BA27EBBF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 52399918B4FA4729AB16AE7A /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/CMakeLists.txt */; };
-		FB66A1944E6745F7A688A1D7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 5FF74620C9224FEC94223BD1 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_monitor.m */; };
-		FC3E213DF6714E9C9B98D8DF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp */ = {isa = PBXBuildFile; fileRef = 9B25734B120942EC9FC17366 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp */; };
-		FD125D6DB453426BBF28FD14 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.c */ = {isa = PBXBuildFile; fileRef = 956AAFC9986A4AEEA429B8DF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.c */; };
+		0F6F1AFDB1444EB7B31B3FCD /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 7CE3F26CC27E474298CD88A8 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_window.m */; };
+		1BA06789338A44759FF6BD37 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/internal.h */ = {isa = PBXBuildFile; fileRef = 6864C2371E344B87B20E1200 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/internal.h */; };
+		25ED2A5E8760432A9223140B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 59DC43C62F284A3AA4D9E73B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist */; };
+		2705BA24417C4459A0E6BDF9 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/context.c */ = {isa = PBXBuildFile; fileRef = 014F0887B63B41B5B93F3723 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/context.c */; };
+		2C979AB717884D92B9F0BD01 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = DB9B504DFD534D70A14201E3 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_init.m */; };
+		33473992AC0A42D2BE60DCCF /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 2982106CD30C4E08969E5267 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_time.c */; };
+		39460C3203344B03AE468741 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp */ = {isa = PBXBuildFile; fileRef = 9E9DDF993BB04BBCA133A2E4 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp */; };
+		3B6381A660E343C0B3BA76A3 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.h */ = {isa = PBXBuildFile; fileRef = 91A476930DAC40699DBA46EE /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.h */; };
+		3BD8EBA548BD4C68A02454D1 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = F44160C5E27F4D32A49814F1 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.h */; };
+		41040E3D1A304DBE934BD459 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bricks.cpp */ = {isa = PBXBuildFile; fileRef = 6172A87E6AF04E9D943F556C /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bricks.cpp */; };
+		4FFAB9A2E6E043BB985FBAC3 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/vshader_bar.glsl */ = {isa = PBXBuildFile; fileRef = C6A70C9704AF4B419DAC7863 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/vshader_bar.glsl */; };
+		5448C67067B84CF5BE13FDC6 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = C707268BE1B74D6F9FE9BD19 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */; };
+		58F78426372B41058B4A569E /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.c */ = {isa = PBXBuildFile; fileRef = 0FAA95AEF1F5473BBD117DFF /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.c */; };
+		5EA4B99AC1814D88BDF1BDB1 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/Angel.h */ = {isa = PBXBuildFile; fileRef = FB3B9D0EFCA54FE1ACB3D756 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/Angel.h */; };
+		5EAC108A2FE74562BBC157A6 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/mat.h */ = {isa = PBXBuildFile; fileRef = 79DD4CDD503F43589EA542F7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/mat.h */; };
+		610D4B42274943D8AD8E4B5E /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/init.c */ = {isa = PBXBuildFile; fileRef = A73B50E2E5BA4F8691AC5F84 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/init.c */; };
+		65475546D04D4E7AA11EF440 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/input.c */ = {isa = PBXBuildFile; fileRef = AB067D40B0284F299536763B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/input.c */; };
+		659EDEBC4BA1436F8933AA88 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/monitor.c */ = {isa = PBXBuildFile; fileRef = B2EEBA0842ED47478D8E1720 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/monitor.c */; };
+		6D5B2A6481044E68B1ACD742 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = F3D977436CF94CA9A91063C7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_monitor.m */; };
+		723C9E7184FD485298EC05AF /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 53727980C19449A191B571F3 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/CMakeLists.txt */; };
+		75A882C21DB549EF91CBF34B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 15A8FE4B49E448DC86C27515 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.h */; };
+		7A9468E1D1254CCC8B722CD7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp */ = {isa = PBXBuildFile; fileRef = 8DE99767251647449CD6B716 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp */; };
+		869B900FC9974116A513F331 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bar.h */ = {isa = PBXBuildFile; fileRef = 0EAD5AD7E42A489BAA7E531B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bar.h */; };
+		88609996E15540B5B824E1E2 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 0C8F9FD5E2F745C2AE6BB7C6 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/vulkan.c */; };
+		8C76DC752E94488682E28375 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bricks.h */ = {isa = PBXBuildFile; fileRef = 0BB353A5D94A4C529358599E /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bricks.h */; };
+		9230C9A95A8D40F6B4F2DE3B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common.h */ = {isa = PBXBuildFile; fileRef = BB26EB05CB9244FE9EC7E663 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common.h */; };
+		95AB376575B74E7E95DB8F83 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bar.cpp */ = {isa = PBXBuildFile; fileRef = B5904520AC10492F910FE552 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bar.cpp */; };
+		A39CCA49289E40369F352C6D /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = CFB0FE99F0C54E65A562C066 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_platform.h */; };
+		A8F6AC568AB44C0F8B9DF90C /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad/glad.h */ = {isa = PBXBuildFile; fileRef = EA612E722FB4488FA2B25781 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad/glad.h */; };
+		B8135654904C4561BC383EAF /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 209ED4588662485D8B9ABC17 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */; };
+		C13F846775EC4F3BBD6FBFA2 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/ball.cpp */ = {isa = PBXBuildFile; fileRef = 1C111175740E4B7EB8E84A35 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/ball.cpp */; };
+		C1868082486A4437A48805A4 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/fshader_bar.glsl */ = {isa = PBXBuildFile; fileRef = 46801BB423B04989BA687305 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/fshader_bar.glsl */; };
+		C31E191BE68C49C89F2D4B3D /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = E96F072AC44146DE9DC62479 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3native.h */; };
+		C5377DCD37DE45D691FC5F50 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/main.cpp */ = {isa = PBXBuildFile; fileRef = 61843BC5062646F9AE1CF6BC /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/main.cpp */; };
+		D487C60BFE484BBB8AAD453C /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/window.c */ = {isa = PBXBuildFile; fileRef = 1A9A9576BD554781B44F3178 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/window.c */; };
+		D830FBCC055949BEB62462E3 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/vec.h */ = {isa = PBXBuildFile; fileRef = 2AD22D1A89E64A62BBC98416 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/vec.h */; };
+		DB2A5B8E49234B7CA5AE4D82 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.h */ = {isa = PBXBuildFile; fileRef = 979DD7A02BA7474F8DE0DDC4 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.h */; };
+		E46E9283FB1E4D39A0E008F9 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 3B63DA6E7C734BEF9783D7F6 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/glfw_config.h */; };
+		EFDDFB64B78F4CCCB13B1007 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad.c */ = {isa = PBXBuildFile; fileRef = 1945EBA984E84B7A806C8E33 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad.c */; };
+		F3DCC0B247A44CA5A88922DA /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = C686F1D5A1694AA6B16A03B0 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.m */; };
+		F722B90AADB94D7F9F814040 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/ball.h */ = {isa = PBXBuildFile; fileRef = 43C4360A71C9442CB7D9AB0B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/ball.h */; };
+		FB9379ECBE354AD8880A7187 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 8619852CD11346CFB68CFAC7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3.h */; };
+		FBA02C50CD744AC58B39F165 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = D7B97E404EED43F38223EAFF /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.m */; };
+		FD4A038A3DE54D9BAA1849A9 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/CheckError.h */ = {isa = PBXBuildFile; fileRef = 28353C9988574E29B76403AE /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/CheckError.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		0CE3A7C490FA4548BF662C0F /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		3D3C665952F4467F8E5E4DED /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		3E5A46A487C347B4A36A839A /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		7B38A38296FA4F57A6CC1F75 /* MinSizeRel */ = {
+		043963B671DB4A7E95B0B0C6 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
+		9471A4412D2F41E1A55143A9 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		B1E95D747F234B019F0D06BD /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		DD0CC6B316C44C108A0F2D79 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		1C9440C11BF34618B1EAF4AB /* PBXContainerItemProxy */ = {
+		70D5FD7A9630447EA4845A7B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 05922488161A466AA11D06E1 /* Project object */;
+			containerPortal = 1AA8C386255543F1B225ED03 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4FF7376A293541C885122316;
+			remoteGlobalIDString = 9DB20104482D46818D23A821;
+			remoteInfo = ZERO_CHECK;
+		};
+		88811447C7D948128C32AE17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA8C386255543F1B225ED03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D67EAF21CBE41068B986EC4;
 			remoteInfo = glad;
 		};
-		2061F075D7B24097968A75F7 /* PBXContainerItemProxy */ = {
+		949B5178AFB244B3976A7C01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 05922488161A466AA11D06E1 /* Project object */;
+			containerPortal = 1AA8C386255543F1B225ED03 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D8BF2D9F31C44C589E254D21;
+			remoteGlobalIDString = 9DB20104482D46818D23A821;
+			remoteInfo = ZERO_CHECK;
+		};
+		9A1777178A6A422CBD04CAC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA8C386255543F1B225ED03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3A983602478463A9305DCC5;
+			remoteInfo = glfw;
+		};
+		AD57C6B92FF84B5FA74F0406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA8C386255543F1B225ED03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DB20104482D46818D23A821;
+			remoteInfo = ZERO_CHECK;
+		};
+		B7684C7955A04B918156FD7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA8C386255543F1B225ED03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3A983602478463A9305DCC5;
+			remoteInfo = glfw;
+		};
+		BE0E3799796043DE8B6F34DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA8C386255543F1B225ED03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D67EAF21CBE41068B986EC4;
+			remoteInfo = glad;
+		};
+		DC31091A90E943D88B0C883E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA8C386255543F1B225ED03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AF0B88856FC4BB8B6FA6A6C;
 			remoteInfo = arkanoid;
 		};
-		31FD815F4A3340D1886AEB72 /* PBXContainerItemProxy */ = {
+		EC8C35264C844E8CA7D356BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 05922488161A466AA11D06E1 /* Project object */;
+			containerPortal = 1AA8C386255543F1B225ED03 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A0DD1407EA01464C82AD32B0;
+			remoteGlobalIDString = E3A983602478463A9305DCC5;
 			remoteInfo = glfw;
-		};
-		343452C630C041B6A90E44EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05922488161A466AA11D06E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0DD1407EA01464C82AD32B0;
-			remoteInfo = glfw;
-		};
-		B60758CAC0C4485D94985DD3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05922488161A466AA11D06E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0DD1407EA01464C82AD32B0;
-			remoteInfo = glfw;
-		};
-		C07482F4B0AE496985CB75D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05922488161A466AA11D06E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BC4B74CAEED4E1F87D6FA43;
-			remoteInfo = ZERO_CHECK;
-		};
-		C111DF32428E41AF82734051 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05922488161A466AA11D06E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BC4B74CAEED4E1F87D6FA43;
-			remoteInfo = ZERO_CHECK;
-		};
-		C2C12269B3974FD49C335BED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05922488161A466AA11D06E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4FF7376A293541C885122316;
-			remoteInfo = glad;
-		};
-		C8131A75B990480595EA9204 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 05922488161A466AA11D06E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BC4B74CAEED4E1F87D6FA43;
-			remoteInfo = ZERO_CHECK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0481B051CC9E4B7D8868F337 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "glfw-3.2/src/monitor.c"; sourceTree = SOURCE_ROOT; };
-		0600BCD6C61946A69D3D3AAA /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/vec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vec.h; path = source/utils/vec.h; sourceTree = SOURCE_ROOT; };
-		088E65F2ACD340E6B5407AE4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/fshader_bar.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fshader_bar.glsl; path = shaders/fshader_bar.glsl; sourceTree = SOURCE_ROOT; };
-		12DA12A4FB61463D82E3438B /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = build/CMakeFiles/arkanoid.dir/Info.plist; sourceTree = SOURCE_ROOT; };
-		14D286A2DC714D998F21A0D6 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "glfw-3.2/src/internal.h"; sourceTree = SOURCE_ROOT; };
-		1AB0CF78D4EE4B5392A286AB /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bar.cpp; path = source/bar.cpp; sourceTree = SOURCE_ROOT; };
-		1E55A078ECC146E2ABBD89F7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = common.h; path = source/common.h; sourceTree = SOURCE_ROOT; };
-		1F039E89A96A4EA1AA728CB9 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "glfw-3.2/src/input.c"; sourceTree = SOURCE_ROOT; };
-		2368D34A2C32461FAAA091E0 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "glfw-3.2/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
-		26D1D6F6791643CD8EEF7BCA /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "glfw-3.2/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
-		2D818BCDE9EA43A08B62FB74 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/ball.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ball.cpp; path = source/ball.cpp; sourceTree = SOURCE_ROOT; };
-		30AF4D867B6B4203A7A1E829 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3221B663D2F7415696AD9A9A /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "build/glfw-3.2/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
-		34036DAEF16248B8838ADE5D /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
-		38B519617BA84431918B2D37 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "glfw-3.2/src/context.c"; sourceTree = SOURCE_ROOT; };
-		39E36460D6E14E6DB222AFDF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "glfw-3.2/src/init.c"; sourceTree = SOURCE_ROOT; };
-		409767DEE9264F2AB9AF5629 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/CheckError.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CheckError.h; path = source/utils/CheckError.h; sourceTree = SOURCE_ROOT; };
-		52399918B4FA4729AB16AE7A /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "glfw-3.2/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-		542DBB90C41F4C139F1802A4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		542DC19F7D004D3398386D61 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "glfw-3.2/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
-		5B761ECDFBF44829B4D74DAF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = u8names.h; path = source/utils/u8names.h; sourceTree = SOURCE_ROOT; };
-		5E3B945F635B47BEA40BBC6E /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "glfw-3.2/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
-		5FF74620C9224FEC94223BD1 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "glfw-3.2/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
-		68168B77DAEE4601A643C976 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bricks.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bricks.h; path = source/bricks.h; sourceTree = SOURCE_ROOT; };
-		75C7C1C0156C4B42A81785C9 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad/glad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glad.h; path = "glfw-3.2/deps/glad/glad.h"; sourceTree = SOURCE_ROOT; };
-		8624CE1C90FA4066A17EC67D /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = "glfw-3.2/src/posix_tls.h"; sourceTree = SOURCE_ROOT; };
-		8C55A91AAD804FE8B38AAC09 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/mat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mat.h; path = source/utils/mat.h; sourceTree = SOURCE_ROOT; };
-		94DEBC6AE83E4FF3AECB0380 /* arkanoid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = arkanoid; sourceTree = BUILT_PRODUCTS_DIR; };
-		956AAFC9986A4AEEA429B8DF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = "glfw-3.2/src/posix_tls.c"; sourceTree = SOURCE_ROOT; };
-		9B25734B120942EC9FC17366 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = u8names.cpp; path = source/utils/u8names.cpp; sourceTree = SOURCE_ROOT; };
-		9C408A55B6B849C48E3202BC /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bar.h; path = source/bar.h; sourceTree = SOURCE_ROOT; };
-		9FA1FC31B5E54DAE90C37DD5 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = "glfw-3.2/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
-		A0DA45C0100C48CAADAFA751 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bricks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bricks.cpp; path = source/bricks.cpp; sourceTree = SOURCE_ROOT; };
-		AF670AF6007C4F5C80F5E8BB /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "glfw-3.2/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
-		BCF969EBDCE042E4AEECD5F6 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = "glfw-3.2/src/vulkan.c"; sourceTree = SOURCE_ROOT; };
-		BF95A6011D5541A58B6D29AF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/ball.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ball.h; path = source/ball.h; sourceTree = SOURCE_ROOT; };
-		C314B0C0DA244181955CC991 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/vshader_bar.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vshader_bar.glsl; path = shaders/vshader_bar.glsl; sourceTree = SOURCE_ROOT; };
-		CCC27C5D523B44A7B8692CF7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = "glfw-3.2/deps/glad.c"; sourceTree = SOURCE_ROOT; };
-		CDD624D1913944B88E74569A /* glad */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE58A869621A4ABD82149280 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		D13AB1958BE943129A0C5781 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "glfw-3.2/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
-		D3A67B198A9C41878AA73556 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = "glfw-3.2/src/cocoa_joystick.h"; sourceTree = SOURCE_ROOT; };
-		E49DC148ED664A8CAF6F2788 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/Angel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Angel.h; path = source/utils/Angel.h; sourceTree = SOURCE_ROOT; };
-		EEE2ED5EF45C4DA991B3FB7B /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		F1749994BA6F4BCBBDF2660F /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shader.cpp; path = shaders/shader.cpp; sourceTree = SOURCE_ROOT; };
-		F3F40D63E682400E82CD5EC4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "glfw-3.2/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
-		FE0DA5D925654DF9A7EF7C71 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = "glfw-3.2/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
-		FF792F285A4B4EBAB7C3CA75 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "glfw-3.2/src/window.c"; sourceTree = SOURCE_ROOT; };
+		014F0887B63B41B5B93F3723 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "glfw-3.2/src/context.c"; sourceTree = SOURCE_ROOT; };
+		0549479CD1084206A9CEFFC0 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB353A5D94A4C529358599E /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bricks.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bricks.h; path = source/bricks.h; sourceTree = SOURCE_ROOT; };
+		0C8F9FD5E2F745C2AE6BB7C6 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = "glfw-3.2/src/vulkan.c"; sourceTree = SOURCE_ROOT; };
+		0EAD5AD7E42A489BAA7E531B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bar.h; path = source/bar.h; sourceTree = SOURCE_ROOT; };
+		0FAA95AEF1F5473BBD117DFF /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = "glfw-3.2/src/posix_tls.c"; sourceTree = SOURCE_ROOT; };
+		15A8FE4B49E448DC86C27515 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "glfw-3.2/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
+		1945EBA984E84B7A806C8E33 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = "glfw-3.2/deps/glad.c"; sourceTree = SOURCE_ROOT; };
+		1A9A9576BD554781B44F3178 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "glfw-3.2/src/window.c"; sourceTree = SOURCE_ROOT; };
+		1C111175740E4B7EB8E84A35 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/ball.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ball.cpp; path = source/ball.cpp; sourceTree = SOURCE_ROOT; };
+		209ED4588662485D8B9ABC17 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		28353C9988574E29B76403AE /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/CheckError.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CheckError.h; path = source/utils/CheckError.h; sourceTree = SOURCE_ROOT; };
+		2982106CD30C4E08969E5267 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = "glfw-3.2/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
+		2AD22D1A89E64A62BBC98416 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/vec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vec.h; path = source/utils/vec.h; sourceTree = SOURCE_ROOT; };
+		3B63DA6E7C734BEF9783D7F6 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "build/glfw-3.2/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		43C4360A71C9442CB7D9AB0B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/ball.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ball.h; path = source/ball.h; sourceTree = SOURCE_ROOT; };
+		46801BB423B04989BA687305 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/fshader_bar.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fshader_bar.glsl; path = shaders/fshader_bar.glsl; sourceTree = SOURCE_ROOT; };
+		53727980C19449A191B571F3 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "glfw-3.2/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		59DC43C62F284A3AA4D9E73B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = build/CMakeFiles/arkanoid.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		5F703A803EBA49D58EC4BB3F /* glad */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6172A87E6AF04E9D943F556C /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bricks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bricks.cpp; path = source/bricks.cpp; sourceTree = SOURCE_ROOT; };
+		61843BC5062646F9AE1CF6BC /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
+		6864C2371E344B87B20E1200 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "glfw-3.2/src/internal.h"; sourceTree = SOURCE_ROOT; };
+		79DD4CDD503F43589EA542F7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/mat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mat.h; path = source/utils/mat.h; sourceTree = SOURCE_ROOT; };
+		7CE3F26CC27E474298CD88A8 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "glfw-3.2/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
+		8619852CD11346CFB68CFAC7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "glfw-3.2/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
+		8DE99767251647449CD6B716 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = u8names.cpp; path = source/utils/u8names.cpp; sourceTree = SOURCE_ROOT; };
+		91A476930DAC40699DBA46EE /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = "glfw-3.2/src/posix_tls.h"; sourceTree = SOURCE_ROOT; };
+		979DD7A02BA7474F8DE0DDC4 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = u8names.h; path = source/utils/u8names.h; sourceTree = SOURCE_ROOT; };
+		9E9DDF993BB04BBCA133A2E4 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shader.cpp; path = shaders/shader.cpp; sourceTree = SOURCE_ROOT; };
+		A649DE72B43E4E8CBC750116 /* arkanoid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = arkanoid; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73B50E2E5BA4F8691AC5F84 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "glfw-3.2/src/init.c"; sourceTree = SOURCE_ROOT; };
+		AB067D40B0284F299536763B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "glfw-3.2/src/input.c"; sourceTree = SOURCE_ROOT; };
+		B2EEBA0842ED47478D8E1720 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "glfw-3.2/src/monitor.c"; sourceTree = SOURCE_ROOT; };
+		B5904520AC10492F910FE552 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bar.cpp; path = source/bar.cpp; sourceTree = SOURCE_ROOT; };
+		BB26EB05CB9244FE9EC7E663 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = common.h; path = source/common.h; sourceTree = SOURCE_ROOT; };
+		C686F1D5A1694AA6B16A03B0 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = "glfw-3.2/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
+		C6A70C9704AF4B419DAC7863 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/vshader_bar.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vshader_bar.glsl; path = shaders/vshader_bar.glsl; sourceTree = SOURCE_ROOT; };
+		C707268BE1B74D6F9FE9BD19 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CFB0FE99F0C54E65A562C066 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "glfw-3.2/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+		D7B97E404EED43F38223EAFF /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "glfw-3.2/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
+		DB9B504DFD534D70A14201E3 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "glfw-3.2/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
+		E96F072AC44146DE9DC62479 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "glfw-3.2/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
+		EA612E722FB4488FA2B25781 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad/glad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glad.h; path = "glfw-3.2/deps/glad/glad.h"; sourceTree = SOURCE_ROOT; };
+		F3D977436CF94CA9A91063C7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "glfw-3.2/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
+		F44160C5E27F4D32A49814F1 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = "glfw-3.2/src/cocoa_joystick.h"; sourceTree = SOURCE_ROOT; };
+		FA71C1DDE65243B5A5CB9E9D /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FB3B9D0EFCA54FE1ACB3D756 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/Angel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Angel.h; path = source/utils/Angel.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1B047132A8B34CFE81CB339E /* Frameworks */ = {
+		59398B151B814AA799D7EF5D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67A6D0CB553D4606958E1CE1 /* Frameworks */ = {
+		BE4BAC47FDB646E891CB0812 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB3B10E8AF6A40559EAE4120 /* Frameworks */ = {
+		E7270C2D60B241EC9828580A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,176 +255,176 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05F9B6324DF844CE95AD77A0 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		06B9305CBBDB491ABDE9B941 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				94DEBC6AE83E4FF3AECB0380 /* arkanoid */,
-				CDD624D1913944B88E74569A /* glad */,
-				30AF4D867B6B4203A7A1E829 /* glfw */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1313479013E0483C815F9D06 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				05F9B6324DF844CE95AD77A0 /* CMake Rules */,
-				EEE2ED5EF45C4DA991B3FB7B /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		21F8271CC9714CA0A17C2B19 /* Frameworks */ = {
+		12559F60193C4EE088BCAF89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		79DBA4EEA1EF4DAEBDF4CBBA /* glad */ = {
+		23AAF64984324D1888D5FA6F /* glad */ = {
 			isa = PBXGroup;
 			children = (
-				7BD86246DB0041FA90F7CDF4 /* Header Files */,
-				CCEBFF8149A14CD18DFA9207 /* Source Files */,
-				CE58A869621A4ABD82149280 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */,
+				C2F65487806B45B592A76276 /* Header Files */,
+				78D5760E824446C593C282FC /* Source Files */,
+				C707268BE1B74D6F9FE9BD19 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */,
 			);
 			name = glad;
 			sourceTree = "<group>";
 		};
-		7B1C03B6789640C7A58EB898 /* Source Files */ = {
+		37D86851A7AB478099CCBE4A /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				F1749994BA6F4BCBBDF2660F /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp */,
-				2D818BCDE9EA43A08B62FB74 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/ball.cpp */,
-				1AB0CF78D4EE4B5392A286AB /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bar.cpp */,
-				A0DA45C0100C48CAADAFA751 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bricks.cpp */,
-				34036DAEF16248B8838ADE5D /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/main.cpp */,
-				9B25734B120942EC9FC17366 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp */,
+				CD14C41B89C5449A82CCE7FA /* CMake Rules */,
+				FA71C1DDE65243B5A5CB9E9D /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */,
 			);
-			name = "Source Files";
+			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		7BD86246DB0041FA90F7CDF4 /* Header Files */ = {
+		63FD131631414E0FB1D0652C /* glfw */ = {
 			isa = PBXGroup;
 			children = (
-				75C7C1C0156C4B42A81785C9 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad/glad.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		80A7112D7B2F44ECB229D287 = {
-			isa = PBXGroup;
-			children = (
-				D8FED07F81614386BA850ADA /* arkanoid */,
-				79DBA4EEA1EF4DAEBDF4CBBA /* glad */,
-				1313479013E0483C815F9D06 /* ALL_BUILD */,
-				E550A97795244225A2CC75F9 /* GLFW3 */,
-				06B9305CBBDB491ABDE9B941 /* Products */,
-				21F8271CC9714CA0A17C2B19 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		8DE83C63FA7A44AC9067B182 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF670AF6007C4F5C80F5E8BB /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_init.m */,
-				9FA1FC31B5E54DAE90C37DD5 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.m */,
-				5FF74620C9224FEC94223BD1 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_monitor.m */,
-				FE0DA5D925654DF9A7EF7C71 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_time.c */,
-				26D1D6F6791643CD8EEF7BCA /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_window.m */,
-				38B519617BA84431918B2D37 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/context.c */,
-				39E36460D6E14E6DB222AFDF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/init.c */,
-				1F039E89A96A4EA1AA728CB9 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/input.c */,
-				0481B051CC9E4B7D8868F337 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/monitor.c */,
-				D13AB1958BE943129A0C5781 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.m */,
-				956AAFC9986A4AEEA429B8DF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.c */,
-				BCF969EBDCE042E4AEECD5F6 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/vulkan.c */,
-				FF792F285A4B4EBAB7C3CA75 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/window.c */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		C93205C781E346068CE93632 /* glfw */ = {
-			isa = PBXGroup;
-			children = (
-				8DE83C63FA7A44AC9067B182 /* Source Files */,
-				CED0EBD33D224613A0469F43 /* Header Files */,
-				52399918B4FA4729AB16AE7A /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/CMakeLists.txt */,
+				DDD6A46DB3DC488882E79AC2 /* Source Files */,
+				C2278058232A46AFA944F7DC /* Header Files */,
+				53727980C19449A191B571F3 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/CMakeLists.txt */,
 			);
 			name = glfw;
 			sourceTree = "<group>";
 		};
-		CCEBFF8149A14CD18DFA9207 /* Source Files */ = {
+		67DBA4239ADE4619A962B406 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				CCC27C5D523B44A7B8692CF7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad.c */,
+				9E9DDF993BB04BBCA133A2E4 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp */,
+				1C111175740E4B7EB8E84A35 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/ball.cpp */,
+				B5904520AC10492F910FE552 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bar.cpp */,
+				6172A87E6AF04E9D943F556C /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bricks.cpp */,
+				61843BC5062646F9AE1CF6BC /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/main.cpp */,
+				8DE99767251647449CD6B716 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		CED0EBD33D224613A0469F43 /* Header Files */ = {
+		7813C7E9BADC4AD4BB5397CC = {
 			isa = PBXGroup;
 			children = (
-				3221B663D2F7415696AD9A9A /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/glfw_config.h */,
-				542DC19F7D004D3398386D61 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3.h */,
-				5E3B945F635B47BEA40BBC6E /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3native.h */,
-				D3A67B198A9C41878AA73556 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.h */,
-				2368D34A2C32461FAAA091E0 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_platform.h */,
-				14D286A2DC714D998F21A0D6 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/internal.h */,
-				F3F40D63E682400E82CD5EC4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.h */,
-				8624CE1C90FA4066A17EC67D /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.h */,
+				82047473233D4F77A50D9A2A /* arkanoid */,
+				23AAF64984324D1888D5FA6F /* glad */,
+				37D86851A7AB478099CCBE4A /* ALL_BUILD */,
+				B6B92CF32EE349A8B0F88D01 /* GLFW3 */,
+				EA25E2D6E8C742B48EDDE5F6 /* Products */,
+				12559F60193C4EE088BCAF89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78D5760E824446C593C282FC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1945EBA984E84B7A806C8E33 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		7F832314F2854622B5FB5770 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				43C4360A71C9442CB7D9AB0B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/ball.h */,
+				0EAD5AD7E42A489BAA7E531B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bar.h */,
+				0BB353A5D94A4C529358599E /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bricks.h */,
+				BB26EB05CB9244FE9EC7E663 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common.h */,
+				FB3B9D0EFCA54FE1ACB3D756 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/Angel.h */,
+				28353C9988574E29B76403AE /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/CheckError.h */,
+				79DD4CDD503F43589EA542F7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/mat.h */,
+				979DD7A02BA7474F8DE0DDC4 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.h */,
+				2AD22D1A89E64A62BBC98416 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/vec.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
 		};
-		D6D28530BCC34518971FE8E2 /* Header Files */ = {
+		82047473233D4F77A50D9A2A /* arkanoid */ = {
 			isa = PBXGroup;
 			children = (
-				BF95A6011D5541A58B6D29AF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/ball.h */,
-				9C408A55B6B849C48E3202BC /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bar.h */,
-				68168B77DAEE4601A643C976 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bricks.h */,
-				1E55A078ECC146E2ABBD89F7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common.h */,
-				E49DC148ED664A8CAF6F2788 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/Angel.h */,
-				409767DEE9264F2AB9AF5629 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/CheckError.h */,
-				8C55A91AAD804FE8B38AAC09 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/mat.h */,
-				5B761ECDFBF44829B4D74DAF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.h */,
-				0600BCD6C61946A69D3D3AAA /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/vec.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		D8FED07F81614386BA850ADA /* arkanoid */ = {
-			isa = PBXGroup;
-			children = (
-				D6D28530BCC34518971FE8E2 /* Header Files */,
-				7B1C03B6789640C7A58EB898 /* Source Files */,
-				FE2DFF09FBA74BCC92EE056A /* Resources */,
-				542DBB90C41F4C139F1802A4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */,
-				088E65F2ACD340E6B5407AE4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/fshader_bar.glsl */,
-				C314B0C0DA244181955CC991 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/vshader_bar.glsl */,
+				7F832314F2854622B5FB5770 /* Header Files */,
+				67DBA4239ADE4619A962B406 /* Source Files */,
+				EDD6418A9CEE4FDDA9F5387D /* Resources */,
+				209ED4588662485D8B9ABC17 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/CMakeLists.txt */,
+				46801BB423B04989BA687305 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/fshader_bar.glsl */,
+				C6A70C9704AF4B419DAC7863 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/vshader_bar.glsl */,
 			);
 			name = arkanoid;
 			sourceTree = "<group>";
 		};
-		E550A97795244225A2CC75F9 /* GLFW3 */ = {
+		B6B92CF32EE349A8B0F88D01 /* GLFW3 */ = {
 			isa = PBXGroup;
 			children = (
-				C93205C781E346068CE93632 /* glfw */,
+				63FD131631414E0FB1D0652C /* glfw */,
 			);
 			name = GLFW3;
 			sourceTree = "<group>";
 		};
-		FE2DFF09FBA74BCC92EE056A /* Resources */ = {
+		C2278058232A46AFA944F7DC /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				12DA12A4FB61463D82E3438B /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist */,
+				3B63DA6E7C734BEF9783D7F6 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/glfw_config.h */,
+				8619852CD11346CFB68CFAC7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3.h */,
+				E96F072AC44146DE9DC62479 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include/GLFW/glfw3native.h */,
+				F44160C5E27F4D32A49814F1 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.h */,
+				CFB0FE99F0C54E65A562C066 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_platform.h */,
+				6864C2371E344B87B20E1200 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/internal.h */,
+				15A8FE4B49E448DC86C27515 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.h */,
+				91A476930DAC40699DBA46EE /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C2F65487806B45B592A76276 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA612E722FB4488FA2B25781 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad/glad.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		CD14C41B89C5449A82CCE7FA /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		DDD6A46DB3DC488882E79AC2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB9B504DFD534D70A14201E3 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_init.m */,
+				C686F1D5A1694AA6B16A03B0 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.m */,
+				F3D977436CF94CA9A91063C7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_monitor.m */,
+				2982106CD30C4E08969E5267 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_time.c */,
+				7CE3F26CC27E474298CD88A8 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_window.m */,
+				014F0887B63B41B5B93F3723 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/context.c */,
+				A73B50E2E5BA4F8691AC5F84 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/init.c */,
+				AB067D40B0284F299536763B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/input.c */,
+				B2EEBA0842ED47478D8E1720 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/monitor.c */,
+				D7B97E404EED43F38223EAFF /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.m */,
+				0FAA95AEF1F5473BBD117DFF /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.c */,
+				0C8F9FD5E2F745C2AE6BB7C6 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/vulkan.c */,
+				1A9A9576BD554781B44F3178 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		EA25E2D6E8C742B48EDDE5F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A649DE72B43E4E8CBC750116 /* arkanoid */,
+				5F703A803EBA49D58EC4BB3F /* glad */,
+				0549479CD1084206A9CEFFC0 /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDD6418A9CEE4FDDA9F5387D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59DC43C62F284A3AA4D9E73B /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -432,30 +432,49 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4FF7376A293541C885122316 /* glad */ = {
+		0D67EAF21CBE41068B986EC4 /* glad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D283780C25564D84A5B4EFF5 /* Build configuration list for PBXNativeTarget "glad" */;
+			buildConfigurationList = 8EBFBC0138444719AB777324 /* Build configuration list for PBXNativeTarget "glad" */;
 			buildPhases = (
-				7C27D15583DB4E15B09E4B15 /* Sources */,
-				67A6D0CB553D4606958E1CE1 /* Frameworks */,
+				76AAFB345AE34501BA095BCF /* Sources */,
+				BE4BAC47FDB646E891CB0812 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A3E4B0DAD0744503B51DD212 /* PBXTargetDependency */,
-				2C16E36098DD4762A5C6BBBA /* PBXTargetDependency */,
+				C69F9E55EF924FA88E52359D /* PBXTargetDependency */,
+				5714B42200AC409ABDF36D6D /* PBXTargetDependency */,
 			);
 			name = glad;
 			productName = glad;
-			productReference = CDD624D1913944B88E74569A /* glad */;
+			productReference = 5F703A803EBA49D58EC4BB3F /* glad */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A0DD1407EA01464C82AD32B0 /* glfw */ = {
+		6AF0B88856FC4BB8B6FA6A6C /* arkanoid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6EF5884DAD9E48E39BD7EF98 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildConfigurationList = 2C27DB2C76D445DC85C4FE14 /* Build configuration list for PBXNativeTarget "arkanoid" */;
 			buildPhases = (
-				31DD93381C254A2C8C3EEFC6 /* Sources */,
-				EB3B10E8AF6A40559EAE4120 /* Frameworks */,
+				A54EE87A0D4F4317A01F5A56 /* Sources */,
+				59398B151B814AA799D7EF5D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AFBD72528374F848D27056E /* PBXTargetDependency */,
+				F31B735C8B194197B115ADED /* PBXTargetDependency */,
+				81DCD194A0404DBD9FFB2A53 /* PBXTargetDependency */,
+			);
+			name = arkanoid;
+			productName = arkanoid;
+			productReference = A649DE72B43E4E8CBC750116 /* arkanoid */;
+			productType = "com.apple.product-type.application";
+		};
+		E3A983602478463A9305DCC5 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F48F7EA1C35848B69C4F3D1B /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				E9DD90230AF0479AB2C63C25 /* Sources */,
+				E7270C2D60B241EC9828580A /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -463,57 +482,38 @@
 			);
 			name = glfw;
 			productName = glfw;
-			productReference = 30AF4D867B6B4203A7A1E829 /* glfw */;
+			productReference = 0549479CD1084206A9CEFFC0 /* glfw */;
 			productType = "com.apple.product-type.library.static";
-		};
-		D8BF2D9F31C44C589E254D21 /* arkanoid */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1B22F91EFF7D43F483F7119C /* Build configuration list for PBXNativeTarget "arkanoid" */;
-			buildPhases = (
-				8B6FC485903942CD8A78E56A /* Sources */,
-				1B047132A8B34CFE81CB339E /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				02BB1615A0854535A534AC72 /* PBXTargetDependency */,
-				884BC24D2DC8449AB3367683 /* PBXTargetDependency */,
-				454D486F2F794CD9A63E01DB /* PBXTargetDependency */,
-			);
-			name = arkanoid;
-			productName = arkanoid;
-			productReference = 94DEBC6AE83E4FF3AECB0380 /* arkanoid */;
-			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		05922488161A466AA11D06E1 /* Project object */ = {
+		1AA8C386255543F1B225ED03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1160;
 			};
-			buildConfigurationList = FF738E8847E24127ABB4256A /* Build configuration list for PBXProject "Arkanoid" */;
+			buildConfigurationList = 9F41D22D56284D45B233532F /* Build configuration list for PBXProject "Arkanoid" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				0CE3A7C490FA4548BF662C0F /* Debug */,
-				3E5A46A487C347B4A36A839A /* Release */,
-				7B38A38296FA4F57A6CC1F75 /* MinSizeRel */,
-				3D3C665952F4467F8E5E4DED /* RelWithDebInfo */,
+				9471A4412D2F41E1A55143A9 /* Debug */,
+				DD0CC6B316C44C108A0F2D79 /* Release */,
+				043963B671DB4A7E95B0B0C6 /* MinSizeRel */,
+				B1E95D747F234B019F0D06BD /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 80A7112D7B2F44ECB229D287;
+			mainGroup = 7813C7E9BADC4AD4BB5397CC;
 			projectDirPath = ../;
 			projectRoot = "";
 			targets = (
-				EC4D5A24C3C146988E2CCD4B /* ALL_BUILD */,
-				9BC4B74CAEED4E1F87D6FA43 /* ZERO_CHECK */,
-				D8BF2D9F31C44C589E254D21 /* arkanoid */,
-				4FF7376A293541C885122316 /* glad */,
-				A0DD1407EA01464C82AD32B0 /* glfw */,
+				25AE63C139E94F168EA873B8 /* ALL_BUILD */,
+				9DB20104482D46818D23A821 /* ZERO_CHECK */,
+				6AF0B88856FC4BB8B6FA6A6C /* arkanoid */,
+				0D67EAF21CBE41068B986EC4 /* glad */,
+				E3A983602478463A9305DCC5 /* glfw */,
 			);
 		};
 /* End PBXProject section */
@@ -534,6 +534,17 @@
 exit 0";
 			showEnvVarsInLog = 0;
 		};
+		5591145D6FBF43DBA1EF0207 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/carlypresz/Desktop/Graphics\\ Github/final-project-team-yoshi/Arkanoids!/build -f /Users/carlypresz/Desktop/Graphics\\ Github/final-project-team-yoshi/Arkanoids!/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
 		9B50530E35CC49C82C2FACCF = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -549,7 +560,7 @@ exit 0";
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		B86911093815474DA9534D60 /* CMake Rules */ = {
+		B9546DFC554D4293B9F47494 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -557,116 +568,105 @@ exit 0";
 			name = "CMake Rules";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Users/saramarie/Desktop/Computer\\ Graphics/final-project-team-yoshi/Arkanoids!/build -f /Users/saramarie/Desktop/Computer\\ Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
-			showEnvVarsInLog = 0;
-		};
-		BDC66DD45B4E4D9BAD1DB254 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/saramarie/Desktop/Computer\\ Graphics/final-project-team-yoshi/Arkanoids!/build -f /Users/saramarie/Desktop/Computer\\ Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			shellScript = "make -C /Users/carlypresz/Desktop/Graphics\\ Github/final-project-team-yoshi/Arkanoids!/build -f /Users/carlypresz/Desktop/Graphics\\ Github/final-project-team-yoshi/Arkanoids!/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		31DD93381C254A2C8C3EEFC6 /* Sources */ = {
+		76AAFB345AE34501BA095BCF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69A728D7EEA44E379A69F9A9 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_init.m */,
-				32E9A3A5B20647B1AB4580BC /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.m */,
-				FB66A1944E6745F7A688A1D7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_monitor.m */,
-				09120EB8D7BF40ACB6E674C0 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_time.c */,
-				D9652E55E78E4037A7C29EC5 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_window.m */,
-				1DAE093AA8F54E13A1BB38E7 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/context.c */,
-				1318C3ED797D4E8D91091BD3 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/init.c */,
-				61863343CE344CA691B2AFCE /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/input.c */,
-				CD4F8DF12B2D49FE9AC4E769 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/monitor.c */,
-				13008D6162E740EFB67FE834 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.m */,
-				FD125D6DB453426BBF28FD14 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.c */,
-				2DCFC4B6E0B84FC780566B58 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/vulkan.c */,
-				4AB8AD3F72B74ACD9DC9BC68 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/window.c */,
+				EFDDFB64B78F4CCCB13B1007 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad.c */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C27D15583DB4E15B09E4B15 /* Sources */ = {
+		A54EE87A0D4F4317A01F5A56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08C80AA1CA434BE0997A31D6 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps/glad.c */,
+				39460C3203344B03AE468741 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp */,
+				C13F846775EC4F3BBD6FBFA2 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/ball.cpp */,
+				95AB376575B74E7E95DB8F83 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bar.cpp */,
+				41040E3D1A304DBE934BD459 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/bricks.cpp */,
+				C5377DCD37DE45D691FC5F50 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/main.cpp */,
+				7A9468E1D1254CCC8B722CD7 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B6FC485903942CD8A78E56A /* Sources */ = {
+		E9DD90230AF0479AB2C63C25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49AD5392A1004E379D0100B4 /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp */,
-				C14D6B534C414314B9C2816F /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/ball.cpp */,
-				E0043B187E1947CC8FA5CD8D /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bar.cpp */,
-				9629846EE14242788BEE1A1A /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/bricks.cpp */,
-				68968622703443EFB8BC615D /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/main.cpp */,
-				FC3E213DF6714E9C9B98D8DF /* /Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp */,
+				2C979AB717884D92B9F0BD01 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_init.m */,
+				F3DCC0B247A44CA5A88922DA /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_joystick.m */,
+				6D5B2A6481044E68B1ACD742 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_monitor.m */,
+				33473992AC0A42D2BE60DCCF /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_time.c */,
+				0F6F1AFDB1444EB7B31B3FCD /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/cocoa_window.m */,
+				2705BA24417C4459A0E6BDF9 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/context.c */,
+				610D4B42274943D8AD8E4B5E /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/init.c */,
+				65475546D04D4E7AA11EF440 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/input.c */,
+				659EDEBC4BA1436F8933AA88 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/monitor.c */,
+				FBA02C50CD744AC58B39F165 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/nsgl_context.m */,
+				58F78426372B41058B4A569E /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/posix_tls.c */,
+				88609996E15540B5B824E1E2 /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/vulkan.c */,
+				D487C60BFE484BBB8AAD453C /* /Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src/window.c */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		02BB1615A0854535A534AC72 /* PBXTargetDependency */ = {
+		3E1EE32EA01A4ED8BEF71391 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9BC4B74CAEED4E1F87D6FA43 /* ZERO_CHECK */;
-			targetProxy = C07482F4B0AE496985CB75D4 /* PBXContainerItemProxy */;
+			target = 0D67EAF21CBE41068B986EC4 /* glad */;
+			targetProxy = BE0E3799796043DE8B6F34DB /* PBXContainerItemProxy */;
 		};
-		2C16E36098DD4762A5C6BBBA /* PBXTargetDependency */ = {
+		5714B42200AC409ABDF36D6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A0DD1407EA01464C82AD32B0 /* glfw */;
-			targetProxy = B60758CAC0C4485D94985DD3 /* PBXContainerItemProxy */;
+			target = 9DB20104482D46818D23A821 /* ZERO_CHECK */;
+			targetProxy = AD57C6B92FF84B5FA74F0406 /* PBXContainerItemProxy */;
 		};
-		454D486F2F794CD9A63E01DB /* PBXTargetDependency */ = {
+		7AFBD72528374F848D27056E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4FF7376A293541C885122316 /* glad */;
-			targetProxy = C2C12269B3974FD49C335BED /* PBXContainerItemProxy */;
+			target = E3A983602478463A9305DCC5 /* glfw */;
+			targetProxy = B7684C7955A04B918156FD7B /* PBXContainerItemProxy */;
 		};
-		4F4DAB80B6BB4CA7949C7A42 /* PBXTargetDependency */ = {
+		81DCD194A0404DBD9FFB2A53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A0DD1407EA01464C82AD32B0 /* glfw */;
-			targetProxy = 31FD815F4A3340D1886AEB72 /* PBXContainerItemProxy */;
+			target = 9DB20104482D46818D23A821 /* ZERO_CHECK */;
+			targetProxy = 70D5FD7A9630447EA4845A7B /* PBXContainerItemProxy */;
 		};
-		884BC24D2DC8449AB3367683 /* PBXTargetDependency */ = {
+		A78A00F3875C477F921B8315 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A0DD1407EA01464C82AD32B0 /* glfw */;
-			targetProxy = 343452C630C041B6A90E44EE /* PBXContainerItemProxy */;
+			target = 6AF0B88856FC4BB8B6FA6A6C /* arkanoid */;
+			targetProxy = DC31091A90E943D88B0C883E /* PBXContainerItemProxy */;
 		};
-		995B76F180E14F17A19E73F5 /* PBXTargetDependency */ = {
+		B9FB921D0F204966B0AF1AF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4FF7376A293541C885122316 /* glad */;
-			targetProxy = 1C9440C11BF34618B1EAF4AB /* PBXContainerItemProxy */;
+			target = 9DB20104482D46818D23A821 /* ZERO_CHECK */;
+			targetProxy = 949B5178AFB244B3976A7C01 /* PBXContainerItemProxy */;
 		};
-		A3E4B0DAD0744503B51DD212 /* PBXTargetDependency */ = {
+		C69F9E55EF924FA88E52359D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9BC4B74CAEED4E1F87D6FA43 /* ZERO_CHECK */;
-			targetProxy = C8131A75B990480595EA9204 /* PBXContainerItemProxy */;
+			target = E3A983602478463A9305DCC5 /* glfw */;
+			targetProxy = 9A1777178A6A422CBD04CAC9 /* PBXContainerItemProxy */;
 		};
-		E4B82619FE344B44BE4BC78C /* PBXTargetDependency */ = {
+		D3FD51A9CE224F6091F6D364 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8BF2D9F31C44C589E254D21 /* arkanoid */;
-			targetProxy = 2061F075D7B24097968A75F7 /* PBXContainerItemProxy */;
+			target = E3A983602478463A9305DCC5 /* glfw */;
+			targetProxy = EC8C35264C844E8CA7D356BB /* PBXContainerItemProxy */;
 		};
-		F2D2A94EBEB4495DA170DFCF /* PBXTargetDependency */ = {
+		F31B735C8B194197B115ADED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9BC4B74CAEED4E1F87D6FA43 /* ZERO_CHECK */;
-			targetProxy = C111DF32428E41AF82734051 /* PBXContainerItemProxy */;
+			target = 0D67EAF21CBE41068B986EC4 /* glad */;
+			targetProxy = 88811447C7D948128C32AE17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04F3D8184A4248458AB231E9 /* RelWithDebInfo */ = {
+		0C4912C6268E4199B2811C44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -680,303 +680,23 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		084A36A1915E467A8D8AC5EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
-		1BD901CF7DC649BE9B3403A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src\"","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glfw3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		1F7C6B8D2F8F4538B46BA900 /* MinSizeRel */ = {
+		200C962AF350488484574631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/build";
-			};
-			name = MinSizeRel;
-		};
-		32F7D4DF1BBD4A29BD89175B /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		3488F518F0814F1FA2AB08B4 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src\"","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("       -DNDEBUG -fPIC -Wall ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glfw3;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		3FEDCA2C61C94B17A87509B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("   ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glad;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/build";
 			};
 			name = Debug;
 		};
-		599700F47D49434E904FBB71 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		6412D4BC99494D75884E673C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glad;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		71B0CF62F0064755A6F73080 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
-				INFOPLIST_FILE = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist";
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/RelWithDebInfo/libglad.a\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = arkanoid;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		7C6408C67D9B4D018A0C606E /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		8EF2FA8B4C5441D3978A43BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
-				INFOPLIST_FILE = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist";
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "   ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/Debug/libglfw3.a\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/Debug/libglad.a\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/Debug/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = arkanoid;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		97808462111D4899945FCBFF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
-				INFOPLIST_FILE = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist";
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/Release/libglfw3.a\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/Release/libglad.a\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/Release/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = arkanoid;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		98590190850E4F98BD7ABA76 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = glad;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		99D553490ABC4560AF0BD651 /* MinSizeRel */ = {
+		3BE8C8647B034F9797AB91A7 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -987,21 +707,56 @@ exit 0";
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
-				INFOPLIST_FILE = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist";
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
+				INFOPLIST_FILE = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist";
 				INSTALL_PATH = "";
 				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/MinSizeRel/libglfw3.a\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/MinSizeRel/libglad.a\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/MinSizeRel/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","$(inherited)");
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/MinSizeRel/libglfw3.a\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/MinSizeRel/libglad.a\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/MinSizeRel/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","$(inherited)");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = arkanoid;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		A255CA9D7CAF40ADB7284A50 /* Debug */ = {
+		430307D8F92340E7A260CDAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/build";
+			};
+			name = Release;
+		};
+		6A065D5C13864AE7B9DE2095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		79E269A176854B80BAFE8ACD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1012,7 +767,7 @@ exit 0";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src\"","$(inherited)");
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src\"","$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = ("   -fPIC -Wall ","$(inherited)");
@@ -1020,23 +775,23 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = glfw3;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Debug;
 		};
-		A859FC2F93C7444B977532FC /* RelWithDebInfo */ = {
+		84A4EF9DAFFD42B69A0C68C2 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/build";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/build";
 			};
-			name = RelWithDebInfo;
+			name = MinSizeRel;
 		};
-		A9F26E79152340F6B7E0DB03 /* MinSizeRel */ = {
+		86F3A48DE5494E0DBF7DE662 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1047,7 +802,7 @@ exit 0";
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/src\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src\"","$(inherited)");
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src\"","$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -Wall ","$(inherited)");
@@ -1055,13 +810,58 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = glfw3;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		AB8176D55363463985A02303 /* Debug */ = {
+		94009A7F33F84D5FB66304D5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		985AA88FEDCB418CA8867FB8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9D8C3631899446E2ACFABE00 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1075,13 +875,13 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
+			name = MinSizeRel;
 		};
-		BD6BB4F58801463A9DA4A675 /* Debug */ = {
+		AEFA6DBD8704410AAB34DBF6 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1095,33 +895,103 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AF86B1311C5647DC8ED3EC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
+				INFOPLIST_FILE = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/Release/libglfw3.a\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/Release/libglad.a\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/Release/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = arkanoid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C108FE9622914853808F1EAC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C74BCE4A159F449D897C45A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Debug;
 		};
-		C745759DB8934AFEA76CB1B6 /* Debug */ = {
+		C8521BCA697B40E5A2BE492C /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/build";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
+			name = RelWithDebInfo;
 		};
-		EF461E5AB5AF4A799D23A607 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build/build";
-			};
-			name = Release;
-		};
-		F1ED2B0849F34B9EBA0DE40D /* MinSizeRel */ = {
+		C96039A453194E838CF8C247 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1129,10 +999,10 @@ exit 0";
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
@@ -1140,13 +1010,83 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = glad;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = MinSizeRel;
+			name = Release;
 		};
-		F6C246792597423B8912EE0D /* Release */ = {
+		D3225FDFFAC04D14A32E3455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D420F0FE92AF4D1180441FF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D4FD81E989044692BE568D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
+				INFOPLIST_FILE = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/Debug/libglfw3.a\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/Debug/libglad.a\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/Debug/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = arkanoid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DED1A11EB7AD42A99D3F30CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1160,82 +1100,142 @@ exit 0";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/saramarie/Desktop/Computer Graphics/final-project-team-yoshi/Arkanoids!/build";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = Debug;
+		};
+		E5CCD67A0BD847A2B2C3ADDB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/src\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src\"","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG -fPIC -Wall ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		ED15C5A0D917436E8BE735C4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/deps\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/source/common\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/shaders\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/glfw-3.2/include\"","$(inherited)");
+				INFOPLIST_FILE = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir/Info.plist";
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/RelWithDebInfo/libglad.a\"","\"/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a\"","-framework Cocoa","-framework IOKit","-framework CoreFoundation","-framework CoreVideo","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = arkanoid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F208776B5A8D4326BCD8CA35 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = "/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/build";
+			};
+			name = RelWithDebInfo;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08F403DE0D444322903B2291 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		2C27DB2C76D445DC85C4FE14 /* Build configuration list for PBXNativeTarget "arkanoid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB8176D55363463985A02303 /* Debug */,
-				084A36A1915E467A8D8AC5EC /* Release */,
-				32F7D4DF1BBD4A29BD89175B /* MinSizeRel */,
-				7C6408C67D9B4D018A0C606E /* RelWithDebInfo */,
+				D4FD81E989044692BE568D7D /* Debug */,
+				AF86B1311C5647DC8ED3EC4C /* Release */,
+				3BE8C8647B034F9797AB91A7 /* MinSizeRel */,
+				ED15C5A0D917436E8BE735C4 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		1015AFA1DF8A47D789F13EEB /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		353B49260DDF4BBF918629E7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD6BB4F58801463A9DA4A675 /* Debug */,
-				F6C246792597423B8912EE0D /* Release */,
-				599700F47D49434E904FBB71 /* MinSizeRel */,
-				04F3D8184A4248458AB231E9 /* RelWithDebInfo */,
+				DED1A11EB7AD42A99D3F30CD /* Debug */,
+				0C4912C6268E4199B2811C44 /* Release */,
+				94009A7F33F84D5FB66304D5 /* MinSizeRel */,
+				AEFA6DBD8704410AAB34DBF6 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		1B22F91EFF7D43F483F7119C /* Build configuration list for PBXNativeTarget "arkanoid" */ = {
+		86CE89D262974603B78D904E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EF2FA8B4C5441D3978A43BF /* Debug */,
-				97808462111D4899945FCBFF /* Release */,
-				99D553490ABC4560AF0BD651 /* MinSizeRel */,
-				71B0CF62F0064755A6F73080 /* RelWithDebInfo */,
+				C74BCE4A159F449D897C45A9 /* Debug */,
+				D420F0FE92AF4D1180441FF9 /* Release */,
+				9D8C3631899446E2ACFABE00 /* MinSizeRel */,
+				C8521BCA697B40E5A2BE492C /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		6EF5884DAD9E48E39BD7EF98 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+		8EBFBC0138444719AB777324 /* Build configuration list for PBXNativeTarget "glad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A255CA9D7CAF40ADB7284A50 /* Debug */,
-				1BD901CF7DC649BE9B3403A4 /* Release */,
-				A9F26E79152340F6B7E0DB03 /* MinSizeRel */,
-				3488F518F0814F1FA2AB08B4 /* RelWithDebInfo */,
+				D3225FDFFAC04D14A32E3455 /* Debug */,
+				C96039A453194E838CF8C247 /* Release */,
+				985AA88FEDCB418CA8867FB8 /* MinSizeRel */,
+				C108FE9622914853808F1EAC /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		D283780C25564D84A5B4EFF5 /* Build configuration list for PBXNativeTarget "glad" */ = {
+		9F41D22D56284D45B233532F /* Build configuration list for PBXProject "Arkanoid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3FEDCA2C61C94B17A87509B9 /* Debug */,
-				6412D4BC99494D75884E673C /* Release */,
-				F1ED2B0849F34B9EBA0DE40D /* MinSizeRel */,
-				98590190850E4F98BD7ABA76 /* RelWithDebInfo */,
+				200C962AF350488484574631 /* Debug */,
+				430307D8F92340E7A260CDAD /* Release */,
+				84A4EF9DAFFD42B69A0C68C2 /* MinSizeRel */,
+				F208776B5A8D4326BCD8CA35 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		FF738E8847E24127ABB4256A /* Build configuration list for PBXProject "Arkanoid" */ = {
+		F48F7EA1C35848B69C4F3D1B /* Build configuration list for PBXNativeTarget "glfw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C745759DB8934AFEA76CB1B6 /* Debug */,
-				EF461E5AB5AF4A799D23A607 /* Release */,
-				1F7C6B8D2F8F4538B46BA900 /* MinSizeRel */,
-				A859FC2F93C7444B977532FC /* RelWithDebInfo */,
+				79E269A176854B80BAFE8ACD /* Debug */,
+				6A065D5C13864AE7B9DE2095 /* Release */,
+				86F3A48DE5494E0DBF7DE662 /* MinSizeRel */,
+				E5CCD67A0BD847A2B2C3ADDB /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 05922488161A466AA11D06E1 /* Project object */;
+	rootObject = 1AA8C386255543F1B225ED03 /* Project object */;
 }

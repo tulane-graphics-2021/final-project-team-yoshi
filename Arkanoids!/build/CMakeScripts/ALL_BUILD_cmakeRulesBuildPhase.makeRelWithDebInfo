@@ -2,9 +2,9 @@
 # Custom rules for ALL_BUILD
 .SUFFIXES: 
 all: \
-	/Users/saramarie/Desktop/Computer\ Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/ALL_BUILD
+	/Users/carlypresz/Desktop/Graphics\ Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/ALL_BUILD
 
 
-/Users/saramarie/Desktop/Computer\ Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/ALL_BUILD: 
+/Users/carlypresz/Desktop/Graphics\ Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/ALL_BUILD: 
 	echo ""
 	echo Build\ all\ projects
