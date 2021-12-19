@@ -35,11 +35,11 @@ bricks::bricks(vec2 position, vec3 color){
 //Called everytime an animation tick happens
 void bricks::update_state(){
     if(state.strong==true){
-        if(state.hit_count==2){
-            bricks_color[0]=vec3(1, .65, .7);
-            bricks_color[1]=vec3(1, .65, .7);
-            bricks_color[2]=vec3(1, .65, .7);
-            bricks_color[3]=vec3(1, .65, .7);
+        if(state.hit_count>1){
+            bricks_color[0]=vec3(1, .6, .65);
+            bricks_color[1]=vec3(1, .6, .65);
+            bricks_color[2]=vec3(1, .6, .65);
+            bricks_color[3]=vec3(1, .6, .65);
         }
         if(state.hit_count>=4){
             bricks_vert[0].x -= 1000;
