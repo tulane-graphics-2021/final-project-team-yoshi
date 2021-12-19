@@ -70,6 +70,17 @@ void init(){
                 all_bricks[i].gl_init();
             }
         }
+    }
+    // Creates gray row of bricks
+    for(int j = 0; j < 15; j++){
+        bricks temp_brick(vec2(j,-2.0), vec3(.5, .5, .5));
+        all_bricks.push_back(temp_brick);
+        all_bricks[j+15].gl_init();
+
+
+
+
+    }
 //        if((i >=15) && (i < 30)){
 //            if(i == 15){
 //                vec2 orig_pos = all_bricks[14].get_position(0);
@@ -91,7 +102,7 @@ void init(){
 //                all_bricks[i].gl_init();
 //            }
 //        }
-    }
+    
 }
 
 //Call update function 30 times a second
@@ -108,20 +119,20 @@ void animate(){
 
 void hit_brick(vec2 ball_pos){
         float brick_h = 0.375;
-        float brick_w = 1.0;
-        float ball_w = 0.25;
-        float ball_height = 0.25;
+        float brick_w = 1;
+        float ball_w = 0.25/2;
+        float ball_height = 0.25/2;
         ball.state.ball_on_brick = false;
     for (int i = 0; i < all_bricks.size(); i++){
         vec2 cur_brick = all_bricks[i].get_position(0);
-        if((cur_brick.x <= ball_pos.x + ball_w) &&
-           (cur_brick.x + brick_h >= ball_pos.x) &&
-           (cur_brick.y <= ball_pos.y + ball_height) &&
-           (brick_w + cur_brick.y >= ball_pos.y)){
+        if((cur_brick.x <= ball_pos.x + ball_w) && // within left side of brick
+           (cur_brick.x + brick_w >= ball_pos.x - ball_w) && // within right side of brick
+           (cur_brick.y <= ball_pos.y + ball_height) && // within bottom
+           (brick_h + cur_brick.y >= ball_pos.y - ball_height)){ // within top
             ball.state.ball_on_brick = true;
-            all_bricks[i].state.brick_hit = true;
-            
+            all_bricks[i].state.brick_hit=true;
         }
+        
     }
 }
 int main(void)

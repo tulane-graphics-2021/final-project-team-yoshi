@@ -44,6 +44,9 @@ public:
     vec2 get_position(int index){
         return bricks_vert[index];
     }
+    vec3 get_color(int index){
+        return bricks_color[index];
+    }
     
     
     void update_state();

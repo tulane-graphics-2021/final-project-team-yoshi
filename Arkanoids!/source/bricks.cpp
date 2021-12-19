@@ -29,18 +29,19 @@ bricks::bricks(vec2 position, vec3 color){
     for(int j = 4; j < 8; j++){
         bricks_color[j] = vec3(0,0,0);
     }
+
 };
 
 //Called everytime an animation tick happens
 void bricks::update_state(){
-   
-    if(state.brick_hit == true) {
+
+    if(state.brick_hit==true) {
         bricks_vert[0].x -= 1000;
         bricks_vert[1].x -= 1000;
         bricks_vert[2].x -= 1000;
         bricks_vert[3].x -= 1000;
     }
-    
+
     // Create a vertex array object
     glBindVertexArray( GLvars.vao );
     

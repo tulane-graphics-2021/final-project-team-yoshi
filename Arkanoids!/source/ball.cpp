@@ -8,7 +8,7 @@
 #include "common.h"
 //ball constructor
 ball::ball(){
-    state.velocity = vec2(0.2, 0.2);
+    state.velocity = vec2(0.18, 0.18);
 
 };
 
