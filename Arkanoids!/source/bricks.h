@@ -16,6 +16,7 @@ public:
         vec2 loc;
         vec3 color;
         bool brick_hit = {false};
+        bool need_reset = {false};
     } state;
     
     //OpenGL variables for a ship
@@ -47,7 +48,6 @@ public:
     vec3 get_color(int index){
         return bricks_color[index];
     }
-    
     
     void update_state();
 

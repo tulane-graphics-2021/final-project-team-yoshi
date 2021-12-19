@@ -40,6 +40,15 @@ void bricks::update_state(){
         bricks_vert[1].x -= 1000;
         bricks_vert[2].x -= 1000;
         bricks_vert[3].x -= 1000;
+        state.brick_hit=false;
+    }
+    if(state.need_reset==true) { // reset bricks when lose
+        bricks_vert[0].x += 1000;
+        bricks_vert[1].x += 1000;
+        bricks_vert[2].x += 1000;
+        bricks_vert[3].x += 1000;
+        state.brick_hit=false;
+        state.need_reset=false;
     }
 
     // Create a vertex array object

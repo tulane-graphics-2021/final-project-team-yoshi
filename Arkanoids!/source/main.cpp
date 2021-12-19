@@ -82,27 +82,6 @@ void init(){
 
 
     }
-//        if((i >=15) && (i < 30)){
-//            if(i == 15){
-//                vec2 orig_pos = all_bricks[14].get_position(0);
-//                bricks temp_brick(vec2(orig_pos.x - 14,-0.75 *2), vec3(1, 0, 0));
-//                all_bricks.push_back(temp_brick);
-//                all_bricks[i].gl_init();
-//            }
-//            if(i%2 == 0){
-//                //vec2 orig_pos = all_bricks[i%15].get_position(0);
-//                bricks temp_brick(vec2(i%15,-0.75 *3), vec3(0, 1, 0));
-//                all_bricks.push_back(temp_brick);
-//                all_bricks[i].gl_init();
-//            }
-//
-//            if(i%2 != 0){
-//                //vec2 orig_pos = all_bricks[i%15].get_position(0);
-//                bricks temp_brick(vec2(i%15,-0.75 * 2), vec3(1, 0, 0));
-//                all_bricks.push_back(temp_brick);
-//                all_bricks[i].gl_init();
-//            }
-//        }
     
 }
 
@@ -129,7 +108,10 @@ void hit_brick(vec2 ball_pos){
         float ball_height = 0.25/2;
         ball.state.ball_on_brick = false;
     for (int i = 0; i < all_bricks.size(); i++){
+    
         vec2 cur_brick = all_bricks[i].get_position(0);
+        
+
         if((cur_brick.x <= ball_pos.x + ball_w) && // within left side of brick
            (cur_brick.x + brick_w >= ball_pos.x - ball_w) && // within right side of brick
            (cur_brick.y <= ball_pos.y + ball_height) && // within bottom
@@ -137,7 +119,9 @@ void hit_brick(vec2 ball_pos){
             ball.state.ball_on_brick = true;
             all_bricks[i].state.brick_hit=true;
         }
-        
+        if(cur_brick.x<-500&&ball.state.launched==false) {
+            all_bricks[i].state.need_reset=true;
+        }
     }
 }
 
