@@ -39,6 +39,7 @@ public:
         vec2 velocity;       //Velocity
         bool move_left = true;
         bool move_right = true;
+        bool lose=false;
     } state;
     
     //OpenGL variables for a bar
@@ -112,7 +113,7 @@ public:
         return bar_vert[index];
     }
     void gl_init();
-    
+
     void draw(mat4 proj);
     
 };

@@ -118,6 +118,9 @@ void animate(){
 }
 
 void hit_brick(vec2 ball_pos){
+    if(ball_pos.y<-7.55){
+        bar.state.lose=true;
+    }
         float brick_h = 0.375;
         float brick_w = 1;
         float ball_w = 0.25/2;
@@ -135,6 +138,9 @@ void hit_brick(vec2 ball_pos){
         
     }
 }
+
+
+
 int main(void)
 {
     GLFWwindow* window;

@@ -15,6 +15,7 @@ ball::ball(){
 //Called everytime an animation tick happens
 
 void ball::update_state(){
+
     if(state.launched){
         state.position = ball_vert[0];
 
@@ -23,6 +24,24 @@ void ball::update_state(){
         }
         if (ball_vert[0].y < -7.55){            // if ball hits bottom
             state.velocity = vec2(0,0);
+            state.launched=false;
+            ball_vert[0].x = 0;
+            ball_vert[0].y = -6.75;
+            
+            ball_vert[1].x = -0.125;
+            ball_vert[1].y = -0.125-6.72;
+            
+            ball_vert[2].x = 0.125;
+            ball_vert[2].y = -0.125-6.72;
+            
+            ball_vert[3].x = 0.125;
+            ball_vert[3].y = 0.125-6.72;
+            
+            ball_vert[4].x = -0.125;
+            ball_vert[4].y = 0.125-6.72;
+            
+            ball_vert[5].x = -0.125;
+            ball_vert[5].y = -0.125-6.72;
         }
         if((ball_vert[0].x > 7.55) || (ball_vert[0].x < -7.55)){ // if ball hits side
             state.velocity.x = -state.velocity.x;
