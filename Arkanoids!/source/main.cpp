@@ -37,6 +37,7 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
             if(ball.state.launched == false){
                 ball.launch();
             }
+            
         }
         //if(action == GLFW_RELEASE){
         //}

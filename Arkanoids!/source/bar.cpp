@@ -25,12 +25,15 @@ void bar::update_state(){
         move_Both();
     }
     state.cur_location = bar_vert[0];
+    
     if(state.lose==true){
         bar_vert[0].x = 0;
         bar_vert[1].x = -1;
         bar_vert[2].x = 1;
         bar_vert[3].x = -1;
         bar_vert[4].x = 1;
+        
+        state.lose = false;
         
     }
     // Create a vertex array object

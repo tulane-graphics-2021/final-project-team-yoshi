@@ -83,13 +83,13 @@
 				CODE_SIGNING_REQUIRED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				SYMROOT = .;
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
+				ARCHS = "arm64";
+				ONLY_ACTIVE_ARCH = NO;
 				
 				
 				
-				
-				SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk";
+				MACOSX_DEPLOYMENT_TARGET = "11.4";
+				SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk";
 			};
 			name = Debug;
 		};

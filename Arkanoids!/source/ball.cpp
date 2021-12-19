@@ -22,9 +22,9 @@ void ball::update_state(){
         if(ball_vert[0].y > 7.55){                 // if ball hits top
             state.velocity.y = -state.velocity.y;
         }
+        
         if (ball_vert[0].y < -7.55){            // if ball hits bottom
-            state.velocity = vec2(0,0);
-            state.launched=false;
+        
             ball_vert[0].x = 0;
             ball_vert[0].y = -6.75;
             
@@ -42,7 +42,10 @@ void ball::update_state(){
             
             ball_vert[5].x = -0.125;
             ball_vert[5].y = -0.125-6.72;
+            
+            state.launched = false;
         }
+        
         if((ball_vert[0].x > 7.55) || (ball_vert[0].x < -7.55)){ // if ball hits side
             state.velocity.x = -state.velocity.x;
         }
@@ -61,6 +64,10 @@ void ball::update_state(){
         for(int i = 0; i < 6; i++){
             ball_vert[i] += state.velocity;
         }
+        
+    }
+    
+    if (!state.launched) {
         
     }
     // Create a vertex array object
