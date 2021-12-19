@@ -121,6 +121,7 @@ void animate(){
 void hit_brick(vec2 ball_pos){
     if(ball_pos.y<-7.55){
         bar.state.lose=true;
+        ball.state.launched=false;
     }
         float brick_h = 0.375;
         float brick_w = 1;

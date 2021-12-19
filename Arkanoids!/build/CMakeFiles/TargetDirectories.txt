@@ -1,7 +1,7 @@
-/Users/RafaelaHojda/Desktop/Direct-GitHub/final-project-team-yoshi/Arkanoids!/Build/CMakeFiles/arkanoid.dir
-/Users/RafaelaHojda/Desktop/Direct-GitHub/final-project-team-yoshi/Arkanoids!/Build/CMakeFiles/glad.dir
-/Users/RafaelaHojda/Desktop/Direct-GitHub/final-project-team-yoshi/Arkanoids!/Build/CMakeFiles/ALL_BUILD.dir
-/Users/RafaelaHojda/Desktop/Direct-GitHub/final-project-team-yoshi/Arkanoids!/Build/CMakeFiles/ZERO_CHECK.dir
-/Users/RafaelaHojda/Desktop/Direct-GitHub/final-project-team-yoshi/Arkanoids!/Build/glfw-3.2/CMakeFiles/ALL_BUILD.dir
-/Users/RafaelaHojda/Desktop/Direct-GitHub/final-project-team-yoshi/Arkanoids!/Build/glfw-3.2/CMakeFiles/ZERO_CHECK.dir
-/Users/RafaelaHojda/Desktop/Direct-GitHub/final-project-team-yoshi/Arkanoids!/Build/glfw-3.2/src/CMakeFiles/glfw.dir
+/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/arkanoid.dir
+/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/glad.dir
+/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/ALL_BUILD.dir
+/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/ZERO_CHECK.dir
+/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/CMakeFiles/ALL_BUILD.dir
+/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/CMakeFiles/ZERO_CHECK.dir
+/Users/carlypresz/Desktop/Graphics Github/final-project-team-yoshi/Arkanoids!/build/glfw-3.2/src/CMakeFiles/glfw.dir

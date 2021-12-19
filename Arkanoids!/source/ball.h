@@ -1,4 +1,3 @@
-
 //  ball.h
 //  ASTEROIDS
 //
