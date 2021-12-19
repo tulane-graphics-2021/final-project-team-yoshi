@@ -2,9 +2,9 @@
 # Custom rules for ZERO_CHECK
 .SUFFIXES: 
 all: \
-	/Users/carlypresz/Desktop/Graphics\ Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/ZERO_CHECK
+	/Users/saramarie/Desktop/Computer\ Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/ZERO_CHECK
 
 
-/Users/carlypresz/Desktop/Graphics\ Github/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/ZERO_CHECK: 
+/Users/saramarie/Desktop/Computer\ Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeFiles/ZERO_CHECK: 
 	echo ""
-	make -f /Users/carlypresz/Desktop/Graphics\ Github/final-project-team-yoshi/Arkanoids!/build/CMakeScripts/ReRunCMake.make
+	make -f /Users/saramarie/Desktop/Computer\ Graphics/final-project-team-yoshi/Arkanoids!/build/CMakeScripts/ReRunCMake.make

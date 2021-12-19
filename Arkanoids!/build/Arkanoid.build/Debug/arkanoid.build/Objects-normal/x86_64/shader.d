@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/carlypresz/Desktop/Graphics\ Github/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp \
-  /Users/carlypresz/Desktop/Graphics\ Github/final-project-team-yoshi/Arkanoids!/shaders/shader.h
+  /Users/saramarie/Desktop/Computer\ Graphics/final-project-team-yoshi/Arkanoids!/shaders/shader.cpp \
+  /Users/saramarie/Desktop/Computer\ Graphics/final-project-team-yoshi/Arkanoids!/shaders/shader.h

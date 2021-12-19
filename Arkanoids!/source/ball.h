@@ -19,6 +19,8 @@ public:
         bool launched = false;
         bool ball_on_bar;
         bool ball_on_brick;
+		float x_i;
+		float x_f;
     } state;
     
     //OpenGL variables for a ship

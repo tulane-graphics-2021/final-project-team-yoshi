@@ -120,6 +120,9 @@ void hit_brick(vec2 ball_pos){
            (brick_h + cur_brick.y >= ball_pos.y - ball_height)){ // within top
             ball.state.ball_on_brick = true;
             all_bricks[i].state.hit_count++;
+			ball.state.x_i = all_bricks[i].get_position(0).x;
+			ball.state.x_f = all_bricks[i].get_position(2).x;
+
         }
         if(ball.state.launched==false){
             all_bricks[i].state.need_reset=true;

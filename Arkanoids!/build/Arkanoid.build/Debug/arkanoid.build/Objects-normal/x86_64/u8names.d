@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/carlypresz/Desktop/Graphics\ Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp \
-  /Users/carlypresz/Desktop/Graphics\ Github/final-project-team-yoshi/Arkanoids!/source/utils/u8names.h
+  /Users/saramarie/Desktop/Computer\ Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.cpp \
+  /Users/saramarie/Desktop/Computer\ Graphics/final-project-team-yoshi/Arkanoids!/source/utils/u8names.h

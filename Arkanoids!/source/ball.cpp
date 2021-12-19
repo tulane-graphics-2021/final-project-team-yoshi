@@ -52,15 +52,21 @@ void ball::update_state(){
         }
         if(state.ball_on_bar){ // if ball hits paddle/bar
             if(state.x_pos > 0 ){ // if ball hits left side of bar, bounces left
-                state.velocity.x = 0.125;
+                state.velocity.x = 0.18;
             }
             if(state.x_pos < 0){ // if ball hits right side of bar, bounces right
-                state.velocity.x =  -0.125;
+                state.velocity.x =  -0.18;
             }
             state.velocity.y = -state.velocity.y;
         }
         if(state.ball_on_brick){
-            state.velocity = -state.velocity;
+			if(state.position.x > state.x_i + 0.5){
+				state.velocity.x = 0.18;
+			}
+			if(state.position.x < state.x_f - 0.5){
+				state.velocity.x = -0.18;
+			}
+            state.velocity.y = -state.velocity.y;
         }
         for(int i = 0; i < 6; i++){
             ball_vert[i] += state.velocity;
