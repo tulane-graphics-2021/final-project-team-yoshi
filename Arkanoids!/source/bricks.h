@@ -17,6 +17,8 @@ public:
         vec3 color;
         bool brick_hit = {false};
         bool need_reset = {false};
+        bool strong = {false};
+        int hit_count = 0;
     } state;
     
     //OpenGL variables for a ship
@@ -48,7 +50,9 @@ public:
     vec3 get_color(int index){
         return bricks_color[index];
     }
-    
+    bool getStrength(){
+        return state.strong;
+    }
     void update_state();
 
     void gl_init();

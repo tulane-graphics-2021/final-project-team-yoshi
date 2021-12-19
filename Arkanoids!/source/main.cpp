@@ -72,15 +72,18 @@ void init(){
             }
         }
     }
-    // Creates gray row of bricks
+    // Creates yellow row of bricks
     for(int j = 0; j < 15; j++){
-        bricks temp_brick(vec2(j,-2.0), vec3(.5, .5, .5));
+        bricks temp_brick(vec2(j,-2.0), vec3(.5, 0, 1));
         all_bricks.push_back(temp_brick);
         all_bricks[j+15].gl_init();
-
-
-
-
+    }
+    // Creates gray row of bricks
+    for(int j = 0; j < 15; j++){
+        bricks temp_brick(vec2(j,-2.5), vec3(.5, .5, .5));
+        all_bricks.push_back(temp_brick);
+        all_bricks[j+30].gl_init();
+        all_bricks[j+30].state.strong=true;
     }
     
 }
@@ -111,15 +114,14 @@ void hit_brick(vec2 ball_pos){
     
         vec2 cur_brick = all_bricks[i].get_position(0);
         
-
         if((cur_brick.x <= ball_pos.x + ball_w) && // within left side of brick
            (cur_brick.x + brick_w >= ball_pos.x - ball_w) && // within right side of brick
            (cur_brick.y <= ball_pos.y + ball_height) && // within bottom
            (brick_h + cur_brick.y >= ball_pos.y - ball_height)){ // within top
             ball.state.ball_on_brick = true;
-            all_bricks[i].state.brick_hit=true;
+            all_bricks[i].state.hit_count++;
         }
-        if(cur_brick.x<-500&&ball.state.launched==false) {
+        if(ball.state.launched==false){
             all_bricks[i].state.need_reset=true;
         }
     }

@@ -34,20 +34,45 @@ bricks::bricks(vec2 position, vec3 color){
 
 //Called everytime an animation tick happens
 void bricks::update_state(){
-
-    if(state.brick_hit==true) {
-        bricks_vert[0].x -= 1000;
-        bricks_vert[1].x -= 1000;
-        bricks_vert[2].x -= 1000;
-        bricks_vert[3].x -= 1000;
-        state.brick_hit=false;
+    if(state.strong==true){
+        if(state.hit_count==2){
+            bricks_color[0]=vec3(1, .65, .7);
+            bricks_color[1]=vec3(1, .65, .7);
+            bricks_color[2]=vec3(1, .65, .7);
+            bricks_color[3]=vec3(1, .65, .7);
+        }
+        if(state.hit_count>=4){
+            bricks_vert[0].x -= 1000;
+            bricks_vert[1].x -= 1000;
+            bricks_vert[2].x -= 1000;
+            bricks_vert[3].x -= 1000;
+            state.hit_count=0;
+        }
     }
-    if(state.need_reset==true) { // reset bricks when lose
-        bricks_vert[0].x += 1000;
-        bricks_vert[1].x += 1000;
-        bricks_vert[2].x += 1000;
-        bricks_vert[3].x += 1000;
-        state.brick_hit=false;
+    if(state.strong==false){
+        if(state.hit_count>=2){
+            bricks_vert[0].x -= 1000;
+            bricks_vert[1].x -= 1000;
+            bricks_vert[2].x -= 1000;
+            bricks_vert[3].x -= 1000;
+            state.hit_count=0;
+        }
+    }
+
+    if(state.need_reset==true) {
+        if(bricks_vert[0].x<-500){
+            bricks_vert[0].x += 1000;
+            bricks_vert[1].x += 1000;
+            bricks_vert[2].x += 1000;
+            bricks_vert[3].x += 1000;
+        }
+        if(state.strong==true){
+            bricks_color[0]=vec3(.5, .5, .5);
+            bricks_color[1]=vec3(.5, .5, .5);
+            bricks_color[2]=vec3(.5, .5, .5);
+            bricks_color[3]=vec3(.5, .5, .5);
+        }
+        state.hit_count=0;
         state.need_reset=false;
     }
 
