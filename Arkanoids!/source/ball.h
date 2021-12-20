@@ -21,6 +21,7 @@ public:
         bool ball_on_brick;
 		float x_i;
 		float x_f;
+		int tries = 0;
     } state;
     
     //OpenGL variables for a ship
@@ -42,6 +43,7 @@ public:
     inline void launch(){
         state.launched = true;
     }
+
     inline void reflect(vec2 ob_1a,vec2 ob_1b, vec2 ob_1c, vec2 ob_2a){
         state.ball_on_bar = false;
         if((ob_2a.y <= -6.875) && (ob_2a.x > ob_1a.x) && (ob_2a.x < ob_1b.x)){

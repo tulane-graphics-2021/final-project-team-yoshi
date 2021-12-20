@@ -34,7 +34,7 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
         }
     if (key == GLFW_KEY_SPACE){
         if(action == GLFW_PRESS){
-            if(ball.state.launched == false){
+            if((ball.state.launched == false) && (ball.state.tries < 3)){
                 ball.launch();
             }
             
@@ -49,6 +49,74 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
     }
 }
 
+
+void draw_bricks(){
+	// Creates bricks
+	for(int i = 0; i < 15; i++){
+		if((i >=0) && (i < 15)){
+			if(i%2 == 0){
+				bricks temp_brick(vec2(i,0), vec3(1, 0, 0));
+				all_bricks.push_back(temp_brick);
+				all_bricks[i].gl_init();
+			}
+			if(i%2 != 0){
+				bricks temp_brick(vec2(i,-0.75), vec3(0, 1, 0));
+				all_bricks.push_back(temp_brick);
+				all_bricks[i].gl_init();
+			}
+		}
+	}
+	for(int j = 0; j < 15; j++){
+		bricks temp_brick(vec2(j,-2.0), vec3(.5, 0, 1));
+		all_bricks.push_back(temp_brick);
+		all_bricks[j+15].gl_init();
+	}
+	// Creates gray row of bricks
+	for(int j = 0; j < 15; j++){
+		bricks temp_brick(vec2(j,-2.5), vec3(.5, .5, .5));
+		all_bricks.push_back(temp_brick);
+		all_bricks[j+30].gl_init();
+		all_bricks[j+30].state.strong=true;
+	}
+}
+
+
+int hit_brick(vec2 ball_pos){
+	if(ball_pos.y<-7.55){
+		bar.state.lose=true;
+		ball.state.launched=false;
+	}
+	float brick_h = 0.375;
+	float brick_w = 1;
+	float ball_w = 0.25/2;
+	float ball_height = 0.25/2;
+	ball.state.ball_on_brick = false;
+	int tot_bricks_hit = 0;
+	
+	for (int i = 0; i < all_bricks.size(); i++){
+		
+		vec2 cur_brick = all_bricks[i].get_position(0);
+		if(all_bricks[i].is_destroyed() == true){
+			tot_bricks_hit += 1;
+		}
+		if((cur_brick.x <= ball_pos.x + ball_w) && // within left side of brick
+		   (cur_brick.x + brick_w >= ball_pos.x - ball_w) && // within right side of brick
+		   (cur_brick.y <= ball_pos.y + ball_height) && // within bottom
+		   (brick_h + cur_brick.y >= ball_pos.y - ball_height)){ // within top
+			ball.state.ball_on_brick = true;
+			all_bricks[i].state.hit_count++;
+			ball.state.x_i = all_bricks[i].get_position(0).x;
+			ball.state.x_f = all_bricks[i].get_position(2).x;
+			
+		}
+		if(ball.state.launched==false && ball.state.tries == 3){
+			all_bricks[i].state.need_reset=true;
+		}
+		
+	}
+	return tot_bricks_hit;
+}
+int num_brick_hit = hit_brick(ball.get_ball_vert(0));
 void init(){
     
     glClearColor(0.0, 0.0, 0.0, 1.0);
@@ -56,36 +124,7 @@ void init(){
     glHint (GL_POINT_SMOOTH_HINT, GL_NICEST);
     bar.gl_init();
     ball.gl_init();
-    
-    // Creates bricks
-    for(int i = 0; i < 15; i++){
-        if((i >=0) && (i < 15)){
-            if(i%2 == 0){
-                bricks temp_brick(vec2(i,0), vec3(1, 0, 0));
-                all_bricks.push_back(temp_brick);
-                all_bricks[i].gl_init();
-            }
-            if(i%2 != 0){
-                bricks temp_brick(vec2(i,-0.75), vec3(0, 1, 0));
-                all_bricks.push_back(temp_brick);
-                all_bricks[i].gl_init();
-            }
-        }
-    }
-    // Creates yellow row of bricks
-    for(int j = 0; j < 15; j++){
-        bricks temp_brick(vec2(j,-2.0), vec3(.5, 0, 1));
-        all_bricks.push_back(temp_brick);
-        all_bricks[j+15].gl_init();
-    }
-    // Creates gray row of bricks
-    for(int j = 0; j < 15; j++){
-        bricks temp_brick(vec2(j,-2.5), vec3(.5, .5, .5));
-        all_bricks.push_back(temp_brick);
-        all_bricks[j+30].gl_init();
-        all_bricks[j+30].state.strong=true;
-    }
-    
+	draw_bricks();
 }
 
 //Call update function 30 times a second
@@ -100,35 +139,7 @@ void animate(){
     }
 }
 
-void hit_brick(vec2 ball_pos){
-    if(ball_pos.y<-7.55){
-        bar.state.lose=true;
-        ball.state.launched=false;
-    }
-        float brick_h = 0.375;
-        float brick_w = 1;
-        float ball_w = 0.25/2;
-        float ball_height = 0.25/2;
-        ball.state.ball_on_brick = false;
-    for (int i = 0; i < all_bricks.size(); i++){
-    
-        vec2 cur_brick = all_bricks[i].get_position(0);
-        
-        if((cur_brick.x <= ball_pos.x + ball_w) && // within left side of brick
-           (cur_brick.x + brick_w >= ball_pos.x - ball_w) && // within right side of brick
-           (cur_brick.y <= ball_pos.y + ball_height) && // within bottom
-           (brick_h + cur_brick.y >= ball_pos.y - ball_height)){ // within top
-            ball.state.ball_on_brick = true;
-            all_bricks[i].state.hit_count++;
-			ball.state.x_i = all_bricks[i].get_position(0).x;
-			ball.state.x_f = all_bricks[i].get_position(2).x;
 
-        }
-        if(ball.state.launched==false){
-            all_bricks[i].state.need_reset=true;
-        }
-    }
-}
 
 
 
@@ -174,14 +185,13 @@ int main(void)
         ball.reflect(bar.get_bar_vert(1), bar.get_bar_vert(2), bar.get_bar_vert(0), ball.get_ball_vert(0));
         
         hit_brick(ball.get_ball_vert(0));
-        
-        
-        
+		if(ball.state.tries == 3){
+			ball.state.tries = 0;
+		}
         animate();
         glClear(GL_COLOR_BUFFER_BIT);
         bar.draw(proj);
         ball.draw(proj);
-        //brick1.draw(proj);
         for(int i = 0; i < all_bricks.size(); i++){
             all_bricks[i].draw(proj);
         }

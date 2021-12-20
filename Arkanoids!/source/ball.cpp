@@ -36,9 +36,10 @@ void ball::update_state(){
         ball_vert[5].x = -0.125;
         ball_vert[5].y = -0.125-6.72;
         state.launched=false;
+		state.tries += 1;
     }
-    
-
+	
+	
     if(state.launched){
         state.position = ball_vert[0];
 
@@ -74,9 +75,6 @@ void ball::update_state(){
         
     }
     
-    if (!state.launched) {
-        
-    }
     // Create a vertex array object
     glBindVertexArray( GLvars.vao );
     

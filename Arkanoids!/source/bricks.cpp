@@ -42,29 +42,28 @@ void bricks::update_state(){
             bricks_color[3]=vec3(1, .6, .65);
         }
         if(state.hit_count>=4){
-            bricks_vert[0].x -= 1000;
-            bricks_vert[1].x -= 1000;
-            bricks_vert[2].x -= 1000;
-            bricks_vert[3].x -= 1000;
+			for (int i = 0; i < 8; i++){
+				bricks_vert[i].x -= 1000;
+			}
             state.hit_count=0;
+			state.brick_hit = true;
         }
     }
     if(state.strong==false){
         if(state.hit_count>=2){
-            bricks_vert[0].x -= 1000;
-            bricks_vert[1].x -= 1000;
-            bricks_vert[2].x -= 1000;
-            bricks_vert[3].x -= 1000;
+			for (int i = 0; i < 8; i++){
+				bricks_vert[i].x -= 1000;
+			}
             state.hit_count=0;
+			state.brick_hit = true;
         }
     }
 
     if(state.need_reset==true) {
         if(bricks_vert[0].x<-500){
-            bricks_vert[0].x += 1000;
-            bricks_vert[1].x += 1000;
-            bricks_vert[2].x += 1000;
-            bricks_vert[3].x += 1000;
+			for (int i = 0; i < 8; i++){
+				bricks_vert[i].x += 1000;
+			}
         }
         if(state.strong==true){
             bricks_color[0]=vec3(.5, .5, .5);
@@ -95,14 +94,7 @@ void bricks::update_state(){
 
 //Initialize the gl state and variables
 void bricks::gl_init(){
-    
-//    bricks_vert[0] = vec2(0-6,-7+15);
-//    bricks_vert[1] = vec2(-1-6,-6.875+15);
-//    bricks_vert[2] = vec2(1-6,-6.875+15);
-//    bricks_vert[3] = vec2(-1-6,-7.125+15);
-//    bricks_vert[4] = vec2(1-6,-7.125+15);
-    
-    
+
     
     std::string vshader = shader_path + "vshader_bricks.glsl";
     std::string fshader = shader_path + "fshader_bricks.glsl";
