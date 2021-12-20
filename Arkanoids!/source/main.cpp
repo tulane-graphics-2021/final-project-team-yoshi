@@ -80,7 +80,56 @@ void draw_bricks(){
 	}
 }
 
-
+void draw_winner(){
+	for(int j = 0; j < 10; j++){
+		bricks temp_brick(vec2(4,-0.375 * j), vec3(0, 1.0, 1.0));
+		all_bricks.push_back(temp_brick);
+		all_bricks[j+45].gl_init();
+	}
+	for(int j = 0; j < 10; j++){
+		if(j >=0 && j <2){
+			bricks temp_brick(vec2(5,-0.375 * j), vec3(0, 1.0, 1.0));
+			all_bricks.push_back(temp_brick);
+			all_bricks[j+55].gl_init();
+		}
+		if(j>=2 && j <4){
+			bricks temp_brick(vec2(5,-0.375 * j), vec3(0, 0, 0));
+			all_bricks.push_back(temp_brick);
+			all_bricks[j+55].gl_init();
+		}
+		if(j >=4 && j <=5){
+			bricks temp_brick(vec2(5,-0.375 * j), vec3(0, 1.0, 1.0));
+			all_bricks.push_back(temp_brick);
+			all_bricks[j+55].gl_init();
+		}
+		if(j > 5){
+			bricks temp_brick(vec2(5,-0.375 * j), vec3(0, 0, 0));
+			all_bricks.push_back(temp_brick);
+			all_bricks[j+55].gl_init();
+		}
+	}
+	for(int j = 0; j < 10; j++){
+		bricks temp_brick(vec2(7,-0.375 * j), vec3(0, 1.0, 1.0));
+		all_bricks.push_back(temp_brick);
+		all_bricks[j+65].gl_init();
+	}
+	for(int j = 0; j < 10; j++){
+		bricks temp_brick(vec2(9,-0.375 * j), vec3(0, 1.0, 1.0));
+		all_bricks.push_back(temp_brick);
+		all_bricks[j+75].gl_init();
+	}
+	for(int j = 0; j < 9; j++){
+		bricks temp_brick(vec2(10+0.2*j,-0.375 * j), vec3(0, 1.0, 1.0));
+		all_bricks.push_back(temp_brick);
+		all_bricks[j+84].gl_init();
+	}
+	for(int j = 0; j < 10; j++){
+		bricks temp_brick(vec2(11.5,-0.375 * j), vec3(0, 1.0, 1.0));
+		all_bricks.push_back(temp_brick);
+		all_bricks[j+94].gl_init();
+	}
+	
+}
 int hit_brick(vec2 ball_pos){
 	if(ball_pos.y<-7.55){
 		bar.state.lose=true;
@@ -90,15 +139,14 @@ int hit_brick(vec2 ball_pos){
 	float brick_w = 1;
 	float ball_w = 0.25/2;
 	float ball_height = 0.25/2;
+	int num_bricks_hit = 0;
+
 	ball.state.ball_on_brick = false;
-	int tot_bricks_hit = 0;
 	
 	for (int i = 0; i < all_bricks.size(); i++){
 		
 		vec2 cur_brick = all_bricks[i].get_position(0);
-		if(all_bricks[i].is_destroyed() == true){
-			tot_bricks_hit += 1;
-		}
+		
 		if((cur_brick.x <= ball_pos.x + ball_w) && // within left side of brick
 		   (cur_brick.x + brick_w >= ball_pos.x - ball_w) && // within right side of brick
 		   (cur_brick.y <= ball_pos.y + ball_height) && // within bottom
@@ -109,22 +157,43 @@ int hit_brick(vec2 ball_pos){
 			ball.state.x_f = all_bricks[i].get_position(2).x;
 			
 		}
+		if(all_bricks[i].is_destroyed() == true && ball.state.tries < 3){
+			num_bricks_hit+=1;
+		}
 		if(ball.state.launched==false && ball.state.tries == 3){
 			all_bricks[i].state.need_reset=true;
+			all_bricks[i].state.brick_hit = false;
+			num_bricks_hit = 0;
 		}
-		
 	}
-	return tot_bricks_hit;
+	return num_bricks_hit;
 }
-int num_brick_hit = hit_brick(ball.get_ball_vert(0));
+bool all_gone = false;
 void init(){
-    
     glClearColor(0.0, 0.0, 0.0, 1.0);
     glHint (GL_LINE_SMOOTH_HINT, GL_NICEST);
     glHint (GL_POINT_SMOOTH_HINT, GL_NICEST);
     bar.gl_init();
     ball.gl_init();
-	draw_bricks();
+	if(all_gone == true){
+		draw_winner();
+	}
+	else{
+		draw_bricks();
+	}
+	
+
+}
+void init_2(){
+	
+	glClearColor(0.0, 0.0, 0.0, 1.0);
+	glHint (GL_LINE_SMOOTH_HINT, GL_NICEST);
+	glHint (GL_POINT_SMOOTH_HINT, GL_NICEST);
+	bar.gl_init();
+	ball.gl_init();
+	draw_winner();
+
+	
 }
 
 //Call update function 30 times a second
@@ -171,8 +240,8 @@ int main(void)
     glfwMakeContextCurrent(window);
     gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
     glfwSwapInterval(1);
-    
-    init();
+	
+	init();
     while (!glfwWindowShouldClose(window)){
         int width, height;
         glfwGetFramebufferSize(window, &width, &height);
@@ -180,14 +249,19 @@ int main(void)
         
         //Pick a coordinate system that makes the most sense to you
         //(left, right, top, bottom)
-        mat4 proj = Ortho2D(-7.5, 7.5, -7.5, 7.5);
+        mat4 proj = Ortho2D(-7.55, 7.55, -7.55, 7.55);
         
         ball.reflect(bar.get_bar_vert(1), bar.get_bar_vert(2), bar.get_bar_vert(0), ball.get_ball_vert(0));
-        
-        hit_brick(ball.get_ball_vert(0));
+		int num = hit_brick(ball.get_ball_vert(0));
+		if(num == 45){
+			all_gone = true;
+			init();
+		}
 		if(ball.state.tries == 3){
 			ball.state.tries = 0;
+			num = 0;
 		}
+		std::cout << num << std::endl;
         animate();
         glClear(GL_COLOR_BUFFER_BIT);
         bar.draw(proj);
@@ -198,7 +272,7 @@ int main(void)
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
-    
+	
     glfwDestroyWindow(window);
     
     glfwTerminate();

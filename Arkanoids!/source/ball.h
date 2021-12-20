@@ -22,6 +22,7 @@ public:
 		float x_i;
 		float x_f;
 		int tries = 0;
+		int hits = 0;
     } state;
     
     //OpenGL variables for a ship
